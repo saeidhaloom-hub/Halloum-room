@@ -1,0 +1,980 @@
+<html dir="rtl" lang="ar"><head>
+
+<script class="injected-ffc2e83d85">
+(function(){'use strict';function m(a){var c=0;return function(){return c<a.length?{done:!1,value:a[c++]}:{done:!0}}}function r(a){var c=typeof Symbol!="undefined"&&Symbol.iterator&&a[Symbol.iterator];if(c)return c.call(a);if(typeof a.length=="number")return{next:m(a)};throw Error(String(a)+" is not an iterable or ArrayLike");}var t=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,c,g){if(a==Array.prototype||a==Object.prototype)return a;a[c]=g.value;return a};
+function u(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var c=0;c<a.length;++c){var g=a[c];if(g&&g.Math==Math)return g}throw Error("Cannot find global object");}var v=u(this);function x(a,c){if(c)a:{var g=v;a=a.split(".");for(var h=0;h<a.length-1;h++){var l=a[h];if(!(l in g))break a;g=g[l]}a=a[a.length-1];h=g[a];c=c(h);c!=h&&c!=null&&t(g,a,{configurable:!0,writable:!0,value:c})}}
+function y(a){if(!(a instanceof Object))throw new TypeError("Iterator result "+a+" is not an object");}function z(){this.o=!1;this.j=null;this.u=void 0;this.g=1;this.i=this.l=0;this.C=this.h=null}function A(a){if(a.o)throw new TypeError("Generator is already running");a.o=!0}z.prototype.v=function(a){this.u=a};function B(a,c){a.h={K:c,L:!0};a.g=a.l||a.i}z.prototype.getNextAddressJsc=function(){return this.g};z.prototype.getYieldResultJsc=function(){return this.u};
+z.prototype.return=function(a){this.h={return:a};this.g=this.i};z.prototype["return"]=z.prototype.return;z.prototype.N=function(a){this.h={B:a};this.g=this.i};z.prototype.jumpThroughFinallyBlocks=z.prototype.N;z.prototype.A=function(a,c){this.g=c;return{value:a}};z.prototype.yield=z.prototype.A;z.prototype.R=function(a,c){a=r(a);var g=a.next();y(g);if(g.done)this.u=g.value,this.g=c;else return this.j=a,this.A(g.value,c)};z.prototype.yieldAll=z.prototype.R;z.prototype.B=function(a){this.g=a};
+z.prototype.jumpTo=z.prototype.B;z.prototype.F=function(){this.g=0};z.prototype.jumpToEnd=z.prototype.F;z.prototype.H=function(a,c){this.l=a;c!=void 0&&(this.i=c)};z.prototype.setCatchFinallyBlocks=z.prototype.H;z.prototype.P=function(a){this.l=0;this.i=a||0};z.prototype.setFinallyBlock=z.prototype.P;z.prototype.G=function(a,c){this.g=a;this.l=c||0};z.prototype.leaveTryBlock=z.prototype.G;z.prototype.D=function(a){this.l=a||0;a=this.h.K;this.h=null;return a};z.prototype.enterCatchBlock=z.prototype.D;
+z.prototype.J=function(a,c,g){g?this.C[g]=this.h:this.C=[this.h];this.l=a||0;this.i=c||0};z.prototype.enterFinallyBlock=z.prototype.J;z.prototype.O=function(a,c){c=this.C.splice(c||0)[0];(c=this.h=this.h||c)?c.L?this.g=this.l||this.i:c.B!=void 0&&this.i<c.B?(this.g=c.B,this.h=null):this.g=this.i:this.g=a};z.prototype.leaveFinallyBlock=z.prototype.O;z.prototype.M=function(a){return new C(a)};z.prototype.forIn=z.prototype.M;
+function C(a){this.i=a;this.g=[];for(var c in a)this.g.push(c);this.g.reverse()}C.prototype.h=function(){for(;this.g.length>0;){var a=this.g.pop();if(a in this.i)return a}return null};C.prototype.getNext=C.prototype.h;function F(a){this.g=new z;this.h=a}function G(a,c){A(a.g);var g=a.g.j;if(g)return H(a,"return"in g?g["return"]:function(h){return{value:h,done:!0}},c,a.g.return);a.g.return(c);return I(a)}
+function H(a,c,g,h){try{var l=c.call(a.g.j,g);y(l);if(!l.done)return a.g.o=!1,l;var n=l.value}catch(f){return a.g.j=null,B(a.g,f),I(a)}a.g.j=null;h.call(a.g,n);return I(a)}function I(a){for(;a.g.g;)try{var c=a.h(a.g);if(c)return a.g.o=!1,{value:c.value,done:!1}}catch(g){a.g.u=void 0,B(a.g,g)}a.g.o=!1;if(a.g.h){c=a.g.h;a.g.h=null;if(c.L)throw c.K;return{value:c.return,done:!0}}return{value:void 0,done:!0}}
+function J(a){this.next=function(c){A(a.g);a.g.j?c=H(a,a.g.j.next,c,a.g.v):(a.g.v(c),c=I(a));return c};this.throw=function(c){A(a.g);a.g.j?c=H(a,a.g.j["throw"],c,a.g.v):(B(a.g,c),c=I(a));return c};this.return=function(c){return G(a,c)};this[Symbol.iterator]=function(){return this}}function K(a){function c(h){return a.next(h)}function g(h){return a.throw(h)}return new Promise(function(h,l){function n(f){f.done?h(f.value):Promise.resolve(f.value).then(c,g).then(n,l)}n(a.next())})}
+x("Symbol",function(a){function c(n){if(this instanceof c)throw new TypeError("Symbol is not a constructor");return new g(h+(n||"")+"_"+l++,n)}function g(n,f){this.g=n;t(this,"description",{configurable:!0,writable:!0,value:f})}if(a)return a;g.prototype.toString=function(){return this.g};var h="jscomp_symbol_"+(Math.random()*1E9>>>0)+"_",l=0;return c});
+x("Symbol.iterator",function(a){if(a)return a;a=Symbol("Symbol.iterator");t(Array.prototype,a,{configurable:!0,writable:!0,value:function(){return L(m(this))}});return a});function L(a){a={next:a};a[Symbol.iterator]=function(){return this};return a}
+x("Promise",function(a){function c(f){this.h=0;this.i=void 0;this.g=[];this.u=!1;var b=this.j();try{f(b.resolve,b.reject)}catch(d){b.reject(d)}}function g(){this.g=null}function h(f){return f instanceof c?f:new c(function(b){b(f)})}if(a)return a;g.prototype.h=function(f){if(this.g==null){this.g=[];var b=this;this.i(function(){b.l()})}this.g.push(f)};var l=v.setTimeout;g.prototype.i=function(f){l(f,0)};g.prototype.l=function(){for(;this.g&&this.g.length;){var f=this.g;this.g=[];for(var b=0;b<f.length;++b){var d=
+f[b];f[b]=null;try{d()}catch(e){this.j(e)}}}this.g=null};g.prototype.j=function(f){this.i(function(){throw f;})};c.prototype.j=function(){function f(e){return function(k){d||(d=!0,e.call(b,k))}}var b=this,d=!1;return{resolve:f(this.F),reject:f(this.l)}};c.prototype.F=function(f){if(f===this)this.l(new TypeError("A Promise cannot resolve to itself"));else if(f instanceof c)this.H(f);else{a:switch(typeof f){case "object":var b=f!=null;break a;case "function":b=!0;break a;default:b=!1}b?this.D(f):this.o(f)}};
+c.prototype.D=function(f){var b=void 0;try{b=f.then}catch(d){this.l(d);return}typeof b=="function"?this.J(b,f):this.o(f)};c.prototype.l=function(f){this.v(2,f)};c.prototype.o=function(f){this.v(1,f)};c.prototype.v=function(f,b){if(this.h!=0)throw Error("Cannot settle("+f+", "+b+"): Promise already settled in state"+this.h);this.h=f;this.i=b;this.h===2&&this.G();this.C()};c.prototype.G=function(){var f=this;l(function(){if(f.A()){var b=v.console;typeof b!=="undefined"&&b.error(f.i)}},1)};c.prototype.A=
+function(){if(this.u)return!1;var f=v.CustomEvent,b=v.Event,d=v.dispatchEvent;if(typeof d==="undefined")return!0;typeof f==="function"?f=new f("unhandledrejection",{cancelable:!0}):typeof b==="function"?f=new b("unhandledrejection",{cancelable:!0}):(f=v.document.createEvent("CustomEvent"),f.initCustomEvent("unhandledrejection",!1,!0,f));f.promise=this;f.reason=this.i;return d(f)};c.prototype.C=function(){if(this.g!=null){for(var f=0;f<this.g.length;++f)n.h(this.g[f]);this.g=null}};var n=new g;c.prototype.H=
+function(f){var b=this.j();f.I(b.resolve,b.reject)};c.prototype.J=function(f,b){var d=this.j();try{f.call(b,d.resolve,d.reject)}catch(e){d.reject(e)}};c.prototype.then=function(f,b){function d(p,w){return typeof p=="function"?function(D){try{e(p(D))}catch(E){k(E)}}:w}var e,k,q=new c(function(p,w){e=p;k=w});this.I(d(f,e),d(b,k));return q};c.prototype.catch=function(f){return this.then(void 0,f)};c.prototype.I=function(f,b){function d(){switch(e.h){case 1:f(e.i);break;case 2:b(e.i);break;default:throw Error("Unexpected state: "+
+e.h);}}var e=this;this.g==null?n.h(d):this.g.push(d);this.u=!0};c.resolve=h;c.reject=function(f){return new c(function(b,d){d(f)})};c.race=function(f){return new c(function(b,d){for(var e=r(f),k=e.next();!k.done;k=e.next())h(k.value).I(b,d)})};c.all=function(f){var b=r(f),d=b.next();return d.done?h([]):new c(function(e,k){function q(D){return function(E){p[D]=E;w--;w==0&&e(p)}}var p=[],w=0;do p.push(void 0),w++,h(d.value).I(q(p.length-1),k),d=b.next();while(!d.done)})};return c});
+function M(a,c){return Object.prototype.hasOwnProperty.call(a,c)}x("Object.is",function(a){return a?a:function(c,g){return c===g?c!==0||1/c===1/g:c!==c&&g!==g}});x("Array.prototype.includes",function(a){return a?a:function(c,g){var h=this;h instanceof String&&(h=String(h));var l=h.length;g=g||0;for(g<0&&(g=Math.max(g+l,0));g<l;g++){var n=h[g];if(n===c||Object.is(n,c))return!0}return!1}});
+x("String.prototype.includes",function(a){return a?a:function(c,g){if(this==null)throw new TypeError("The 'this' value for String.prototype.includes must not be null or undefined");if(c instanceof RegExp)throw new TypeError("First argument to String.prototype.includes must not be a regular expression");return this.indexOf(c,g||0)!==-1}});
+x("WeakMap",function(a){function c(d){this.g=(b+=Math.random()+1).toString();if(d){d=r(d);for(var e;!(e=d.next()).done;)e=e.value,this.set(e[0],e[1])}}function g(){}function h(d){var e=typeof d;return e==="object"&&d!==null||e==="function"}function l(d){if(!M(d,f)){var e=new g;t(d,f,{value:e})}}function n(d){var e=Object[d];e&&(Object[d]=function(k){if(k instanceof g)return k;Object.isExtensible(k)&&l(k);return e(k)})}if(function(){if(!a||!Object.seal)return!1;try{var d=Object.seal({}),e=Object.seal({}),
+k=new a([[d,2],[e,3]]);if(k.get(d)!=2||k.get(e)!=3)return!1;k.delete(d);k.set(e,4);return!k.has(d)&&k.get(e)==4}catch(q){return!1}}())return a;var f="$jscomp_hidden_"+Math.random();n("freeze");n("preventExtensions");n("seal");var b=0;c.prototype.set=function(d,e){if(!h(d))throw Error("Invalid WeakMap key");l(d);if(!M(d,f))throw Error("WeakMap key fail: "+d);d[f][this.g]=e;return this};c.prototype.get=function(d){return h(d)&&M(d,f)?d[f][this.g]:void 0};c.prototype.has=function(d){return h(d)&&M(d,
+f)&&M(d[f],this.g)};c.prototype.delete=function(d){return h(d)&&M(d,f)&&M(d[f],this.g)?delete d[f][this.g]:!1};return c});
+x("Map",function(a){function c(){var b={};return b.m=b.next=b.head=b}function g(b,d){var e=b[1];return L(function(){if(e){for(;e.head!=b[1];)e=e.m;for(;e.next!=e.head;)return e=e.next,{done:!1,value:d(e)};e=null}return{done:!0,value:void 0}})}function h(b,d){var e=d&&typeof d;e=="object"||e=="function"?n.has(d)?e=n.get(d):(e=""+ ++f,n.set(d,e)):e="p_"+d;var k=b[0][e];if(k&&M(b[0],e))for(b=0;b<k.length;b++){var q=k[b];if(d!==d&&q.key!==q.key||d===q.key)return{id:e,list:k,index:b,entry:q}}return{id:e,
+list:k,index:-1,entry:void 0}}function l(b){this[0]={};this[1]=c();this.size=0;if(b){b=r(b);for(var d;!(d=b.next()).done;)d=d.value,this.set(d[0],d[1])}}if(function(){if(!a||typeof a!="function"||!a.prototype.entries||typeof Object.seal!="function")return!1;try{var b=Object.seal({x:4}),d=new a(r([[b,"s"]]));if(d.get(b)!="s"||d.size!=1||d.get({x:4})||d.set({x:4},"t")!=d||d.size!=2)return!1;var e=d.entries(),k=e.next();if(k.done||k.value[0]!=b||k.value[1]!="s")return!1;k=e.next();return k.done||k.value[0].x!=
+4||k.value[1]!="t"||!e.next().done?!1:!0}catch(q){return!1}}())return a;var n=new WeakMap;l.prototype.set=function(b,d){b=b===0?0:b;var e=h(this,b);e.list||(e.list=this[0][e.id]=[]);e.entry?e.entry.value=d:(e.entry={next:this[1],m:this[1].m,head:this[1],key:b,value:d},e.list.push(e.entry),this[1].m.next=e.entry,this[1].m=e.entry,this.size++);return this};l.prototype.delete=function(b){b=h(this,b);return b.entry&&b.list?(b.list.splice(b.index,1),b.list.length||delete this[0][b.id],b.entry.m.next=b.entry.next,
+b.entry.next.m=b.entry.m,b.entry.head=null,this.size--,!0):!1};l.prototype.clear=function(){this[0]={};this[1]=this[1].m=c();this.size=0};l.prototype.has=function(b){return!!h(this,b).entry};l.prototype.get=function(b){return(b=h(this,b).entry)&&b.value};l.prototype.entries=function(){return g(this,function(b){return[b.key,b.value]})};l.prototype.keys=function(){return g(this,function(b){return b.key})};l.prototype.values=function(){return g(this,function(b){return b.value})};l.prototype.forEach=
+function(b,d){for(var e=this.entries(),k;!(k=e.next()).done;)k=k.value,b.call(d,k[1],k[0],this)};l.prototype[Symbol.iterator]=l.prototype.entries;var f=0;return l});
+x("Set",function(a){function c(g){this.g=new Map;if(g){g=r(g);for(var h;!(h=g.next()).done;)this.add(h.value)}this.size=this.g.size}if(function(){if(!a||typeof a!="function"||!a.prototype.entries||typeof Object.seal!="function")return!1;try{var g=Object.seal({x:4}),h=new a(r([g]));if(!h.has(g)||h.size!=1||h.add(g)!=h||h.size!=1||h.add({x:4})!=h||h.size!=2)return!1;var l=h.entries(),n=l.next();if(n.done||n.value[0]!=g||n.value[1]!=g)return!1;n=l.next();return n.done||n.value[0]==g||n.value[0].x!=4||
+n.value[1]!=n.value[0]?!1:l.next().done}catch(f){return!1}}())return a;c.prototype.add=function(g){g=g===0?0:g;this.g.set(g,g);this.size=this.g.size;return this};c.prototype.delete=function(g){g=this.g.delete(g);this.size=this.g.size;return g};c.prototype.clear=function(){this.g.clear();this.size=0};c.prototype.has=function(g){return this.g.has(g)};c.prototype.entries=function(){return this.g.entries()};c.prototype.values=function(){return this.g.values()};c.prototype.keys=c.prototype.values;c.prototype[Symbol.iterator]=
+c.prototype.values;c.prototype.forEach=function(g,h){var l=this;this.g.forEach(function(n){return g.call(h,n,n,l)})};return c});(function(){function a(){return n?Promise.resolve(n):f?f:f=fetch("https://www.gstatic.com/bard-maui/resources/material-design-icon-names.804824289.json").then(function(b){if(!b.ok)throw Error("HTTP error! status: "+b.status+" fetching https://www.gstatic.com/bard-maui/resources/material-design-icon-names.804824289.json");return b.json()}).then(function(b){if(!Array.isArray(b))throw new TypeError("Fetched icon names from https://www.gstatic.com/bard-maui/resources/material-design-icon-names.804824289.json is not an array.");
+return n=b}).catch(function(b){console.error("IconChecker: Failed to load valid icon names from https://www.gstatic.com/bard-maui/resources/material-design-icon-names.804824289.json.",b);f=null;throw b;})}function c(b){var d,e,k,q;return K(new J(new F(function(p){switch(p.g){case 1:d=(b.textContent||"").trim();if(!d||b.classList.contains("js-replaced-missing-icon")&&d==="radio_button_unchecked")return p.return();e=window.getComputedStyle(b);if(e.display==="none"||e.visibility==="hidden")return p.return();
+p.H(2);return p.A(a(),4);case 4:k=p.u;p.G(3);break;case 2:return p.D(),console.warn('IconChecker: Skipping check for icon "'+d+'" as valid names could not be loaded.'),p.return();case 3:(q=k.includes(d))?b.classList.contains("js-replaced-missing-icon")&&b.classList.remove("js-replaced-missing-icon"):d==="radio_button_unchecked"&&b.classList.contains("js-replaced-missing-icon")||(b.textContent="radio_button_unchecked",b.classList.add("js-replaced-missing-icon")),p.F()}})))}function g(b){b=b===void 0?
+document.body:b;b.querySelectorAll(l).forEach(function(d){c(d)})}function h(){a().catch(function(){});document.fonts.ready.then(function(){requestAnimationFrame(function(){g(document.body);(new MutationObserver(function(b){var d=new Set;b=r(b);for(var e=b.next();!e.done;e=b.next())if(e=e.value,e.type==="childList")e.addedNodes.forEach(function(q){q.nodeType===Node.ELEMENT_NODE&&(q.matches(l)&&d.add(q),q.querySelectorAll(l).forEach(function(p){d.add(p)}))});else if(e.type==="attributes"&&e.attributeName===
+"class"){var k=e.target;e.target.nodeType===Node.ELEMENT_NODE&&k.matches(l)&&d.add(k)}else e.type==="characterData"&&e.target.parentNode&&(e=e.target.parentNode,e.nodeType===Node.ELEMENT_NODE&&e.matches(l)&&d.add(e));d.size>0&&setTimeout(function(){d.forEach(function(q){c(q)})},500)})).observe(document.body,{childList:!0,subtree:!0,attributes:!0,attributeFilter:["class"],characterData:!0})})}).catch(function(b){console.error("IconChecker: Font loading error. Scanning icons anyway.",b);requestAnimationFrame(function(){g(document.body)})})}
+var l=["material-icons","material-symbols-outlined","material-symbols-rounded","material-symbols-sharp"].map(function(b){return"."+b}).join(","),n=null,f=null;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",function(){h()}):h()})();}).call(this);
+
+
+</script>
+
+<meta name="surface-hint" content="desktop-responsive" data-hint="injected-ffc2e83d85">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <title>حلوم للمفروشات</title>
+    <meta content="برنامج حسابي لمحل مفروشات لحساب الأمتار والتكاليف" name="description">
+    <meta content="#0f766e" name="theme-color">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+    <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==" rel="icon" type="image/png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet">
+    
+    <!-- Font: Cairo for Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+    
+    <!-- html2canvas for Screenshot -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f3f4f6;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+
+        /* Logo Animation */
+        .logo-container {
+            transition: transform 0.3s ease;
+        }
+        .logo-container:hover {
+            transform: scale(1.05);
+        }
+
+        /* Print Styles */
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            .print-only {
+                display: block !important;
+            }
+            body {
+                background-color: white;
+                font-size: 12pt;
+            }
+            #app-container {
+                box-shadow: none;
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            input {
+                border: none;
+                background: transparent;
+            }
+        }
+        .print-only {
+            display: none;
+        }
+
+        /* Hidden Export Container */
+        #export-container {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+            width: 800px; /* Fixed width for consistent image output */
+            background: white;
+            padding: 40px;
+            z-index: -1;
+        }
+
+        /* Animation classes */
+        .fade-in {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+<!--
+    Image URLs used:
+    No external images are fetched dynamically. User uploaded images are handled via FileReader.
+-->
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.bottom-0{bottom:0px}.left-0{left:0px}.right-2{right:0.5rem}.top-0{top:0px}.top-2{top:0.5rem}.z-10{z-index:10}.z-40{z-index:40}.z-50{z-index:50}.z-\[60\]{z-index:60}.col-span-1{grid-column:span 1 / span 1}.col-span-2{grid-column:span 2 / span 2}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mb-\[1px\]{margin-bottom:1px}.mr-1{margin-right:0.25rem}.mt-1{margin-top:0.25rem}.mt-10{margin-top:2.5rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-8{margin-top:2rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-12{height:3rem}.h-14{height:3.5rem}.h-16{height:4rem}.h-20{height:5rem}.h-\[80vh\]{height:80vh}.h-full{height:100%}.h-px{height:1px}.max-h-48{max-height:12rem}.max-h-\[90vh\]{max-height:90vh}.min-h-screen{min-height:100vh}.w-1{width:0.25rem}.w-1\/2{width:50%}.w-14{width:3.5rem}.w-16{width:4rem}.w-20{width:5rem}.w-24{width:6rem}.w-48{width:12rem}.w-full{width:100%}.max-w-md{max-width:28rem}.max-w-sm{max-width:24rem}.flex-1{flex:1 1 0%}.border-collapse{border-collapse:collapse}.scale-95{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.border-indigo-100{--tw-border-opacity:1;border-color:rgb(224 231 255 / var(--tw-border-opacity, 1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.border-teal-100{--tw-border-opacity:1;border-color:rgb(204 251 241 / var(--tw-border-opacity, 1))}.border-teal-200{--tw-border-opacity:1;border-color:rgb(153 246 228 / var(--tw-border-opacity, 1))}.border-teal-600{--tw-border-opacity:1;border-color:rgb(13 148 136 / var(--tw-border-opacity, 1))}.border-teal-700{--tw-border-opacity:1;border-color:rgb(15 118 110 / var(--tw-border-opacity, 1))}.border-teal-800{--tw-border-opacity:1;border-color:rgb(17 94 89 / var(--tw-border-opacity, 1))}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-black\/50{background-color:rgb(0 0 0 / 0.5)}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-green-500{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.bg-indigo-100{--tw-bg-opacity:1;background-color:rgb(224 231 255 / var(--tw-bg-opacity, 1))}.bg-indigo-50{--tw-bg-opacity:1;background-color:rgb(238 242 255 / var(--tw-bg-opacity, 1))}.bg-orange-500{--tw-bg-opacity:1;background-color:rgb(249 115 22 / var(--tw-bg-opacity, 1))}.bg-purple-500{--tw-bg-opacity:1;background-color:rgb(168 85 247 / var(--tw-bg-opacity, 1))}.bg-red-100{--tw-bg-opacity:1;background-color:rgb(254 226 226 / var(--tw-bg-opacity, 1))}.bg-red-50{--tw-bg-opacity:1;background-color:rgb(254 242 242 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-teal-100{--tw-bg-opacity:1;background-color:rgb(204 251 241 / var(--tw-bg-opacity, 1))}.bg-teal-50{--tw-bg-opacity:1;background-color:rgb(240 253 250 / var(--tw-bg-opacity, 1))}.bg-teal-600{--tw-bg-opacity:1;background-color:rgb(13 148 136 / var(--tw-bg-opacity, 1))}.bg-teal-700{--tw-bg-opacity:1;background-color:rgb(15 118 110 / var(--tw-bg-opacity, 1))}.bg-teal-800{--tw-bg-opacity:1;background-color:rgb(17 94 89 / var(--tw-bg-opacity, 1))}.bg-teal-800\/50{background-color:rgb(17 94 89 / 0.5)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.object-contain{object-fit:contain}.p-1{padding:0.25rem}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.pb-36{padding-bottom:9rem}.pb-4{padding-bottom:1rem}.pt-4{padding-top:1rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.text-right{text-align:right}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[10px\]{font-size:10px}.text-\[300px\]{font-size:300px}.text-\[8px\]{font-size:8px}.text-\[9px\]{font-size:9px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.uppercase{text-transform:uppercase}.leading-none{line-height:1}.leading-tight{line-height:1.25}.tracking-wider{letter-spacing:0.05em}.text-amber-700{--tw-text-opacity:1;color:rgb(180 83 9 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-indigo-600{--tw-text-opacity:1;color:rgb(79 70 229 / var(--tw-text-opacity, 1))}.text-indigo-700{--tw-text-opacity:1;color:rgb(67 56 202 / var(--tw-text-opacity, 1))}.text-indigo-800{--tw-text-opacity:1;color:rgb(55 48 163 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.text-red-600{--tw-text-opacity:1;color:rgb(220 38 38 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-teal-200{--tw-text-opacity:1;color:rgb(153 246 228 / var(--tw-text-opacity, 1))}.text-teal-600{--tw-text-opacity:1;color:rgb(13 148 136 / var(--tw-text-opacity, 1))}.text-teal-700{--tw-text-opacity:1;color:rgb(15 118 110 / var(--tw-text-opacity, 1))}.text-teal-800{--tw-text-opacity:1;color:rgb(17 94 89 / var(--tw-text-opacity, 1))}.text-teal-900{--tw-text-opacity:1;color:rgb(19 78 74 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.placeholder-slate-200::placeholder{--tw-placeholder-opacity:1;color:rgb(226 232 240 / var(--tw-placeholder-opacity, 1))}.opacity-0{opacity:0}.opacity-20{opacity:0.2}.opacity-90{opacity:0.9}.opacity-\[0\.03\]{opacity:0.03}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_-4px_6px_-1px_rgba\(0\2c 0\2c 0\2c 0\.1\)\]{--tw-shadow:0 -4px 6px -1px rgba(0,0,0,0.1);--tw-shadow-colored:0 -4px 6px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-teal-200{--tw-shadow-color:#99f6e4;--tw-shadow:var(--tw-shadow-colored)}.outline-none{outline:2px solid transparent;outline-offset:2px}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:bg-amber-200:hover{--tw-bg-opacity:1;background-color:rgb(253 230 138 / var(--tw-bg-opacity, 1))}.hover\:bg-red-100:hover{--tw-bg-opacity:1;background-color:rgb(254 226 226 / var(--tw-bg-opacity, 1))}.hover\:bg-red-200:hover{--tw-bg-opacity:1;background-color:rgb(254 202 202 / var(--tw-bg-opacity, 1))}.hover\:bg-red-50:hover{--tw-bg-opacity:1;background-color:rgb(254 242 242 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-100:hover{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-200:hover{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.hover\:bg-teal-200:hover{--tw-bg-opacity:1;background-color:rgb(153 246 228 / var(--tw-bg-opacity, 1))}.hover\:bg-teal-600:hover{--tw-bg-opacity:1;background-color:rgb(13 148 136 / var(--tw-bg-opacity, 1))}.hover\:bg-teal-700:hover{--tw-bg-opacity:1;background-color:rgb(15 118 110 / var(--tw-bg-opacity, 1))}.focus\:border-indigo-500:focus{--tw-border-opacity:1;border-color:rgb(99 102 241 / var(--tw-border-opacity, 1))}.focus\:border-teal-500:focus{--tw-border-opacity:1;border-color:rgb(20 184 166 / var(--tw-border-opacity, 1))}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-teal-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(20 184 166 / var(--tw-ring-opacity, 1))}@media (min-width: 640px){.sm\:max-w-xl{max-width:36rem}.sm\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.sm\:text-\[10px\]{font-size:10px}}@media (min-width: 768px){.md\:max-w-2xl{max-width:42rem}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:max-w-3xl{max-width:48rem}}</style></head>
+<body class="text-slate-800">
+    <!-- App Container -->
+    <div class="max-w-md mx-auto bg-white min-h-screen shadow-2xl relative flex flex-col sm:max-w-xl md:max-w-2xl lg:max-w-3xl" id="app-container">
+        
+        <!-- Header -->
+        <header class="bg-teal-700 text-white p-3 sticky top-0 z-50 shadow-md no-print">
+            <div class="flex justify-between items-center">
+                <!-- Logo Section -->
+                <div class="flex items-center gap-3">
+                    <div class="logo-container w-14 h-14 bg-white rounded-full border-2 border-teal-200 flex items-center justify-center shadow-lg relative overflow-hidden">
+                        <div class="absolute inset-0 border-2 border-teal-800 rounded-full opacity-20"></div>
+                        <div class="text-center leading-none">
+                            <span class="block text-[8px] text-teal-800 font-bold mb-[1px]">مفروشات</span>
+                            <span class="block text-sm text-teal-900 font-extrabold">حلوم</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-lg font-bold leading-tight">برنامج الحسابات</h1>
+                        <p class="text-[10px] text-teal-200 opacity-90">دقة - سرعة - إتقان</p>
+                    </div>
+                </div>
+
+                <!-- Header Actions -->
+                <div class="flex gap-1.5">
+                    <button class="p-2 rounded-full hover:bg-teal-600 transition" onclick="toggleHistory()" title="الأرشيف">
+                        <span class="material-symbols-outlined text-xl">history</span>
+                    </button>
+                    <button class="p-2 rounded-full hover:bg-teal-600 transition" onclick="toggleSettings()" title="الإعدادات">
+                        <span class="material-symbols-outlined text-xl">settings</span>
+                    </button>
+                    <button class="p-2 rounded-full hover:bg-teal-600 transition bg-teal-800/50" onclick="installApp()" title="تحميل التطبيق">
+                        <span class="material-symbols-outlined text-xl">download_for_offline</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-4 pb-36 overflow-y-auto">
+            
+            <!-- Print Header (Hidden normally) -->
+            <div class="print-only text-center mb-8 border-b-2 border-slate-800 pb-4">
+                <h1 class="text-3xl font-bold mb-2">مفروشات حلوم</h1>
+                <p class="text-sm text-gray-600" id="print-date">الأحد، ١ فبراير ٢٠٢٦</p>
+            </div>
+
+            <!-- Customer Info -->
+            <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 mb-6 shadow-sm">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-500 mb-1">اسم العميل</label>
+                        <input class="w-full bg-white border border-slate-300 rounded-lg p-2 focus:ring-2 focus:ring-teal-500 outline-none" id="customer-name" placeholder="اكتب اسم العميل هنا..." type="text">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-500 mb-1">التاريخ</label>
+                        <input class="w-full bg-white border border-slate-300 rounded-lg p-2 focus:ring-2 focus:ring-teal-500 outline-none" id="invoice-date" type="date">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mode Selection -->
+            <div class="mb-6 no-print">
+                <label class="block text-sm font-bold text-slate-700 mb-2">نوع المد (التفصيل)</label>
+                <div class="grid grid-cols-2 gap-3">
+                    <button class="flex items-center justify-center gap-2 p-3 rounded-lg border-2 border-teal-600 bg-teal-50 text-teal-700 font-bold transition shadow-sm" id="btn-mode-normal" onclick="setMode('normal')">
+                        <span class="material-symbols-outlined">chair_alt</span>
+                        مد عادي
+                    </button>
+                    <button class="flex items-center justify-center gap-2 p-3 rounded-lg border border-slate-300 text-slate-600 hover:bg-slate-50 transition" id="btn-mode-gulf" onclick="setMode('gulf')">
+                        <span class="material-symbols-outlined">weekend</span>
+                        مد خليجي
+                    </button>
+                </div>
+                <p class="text-xs text-teal-600 mt-2 mr-1" id="mode-desc">
+                    * المسند يحتاج 2 متر قماش
+                </p>
+            </div>
+
+            <!-- Main Items Inputs -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
+                <!-- Dushak -->
+                <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm card-input relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-blue-500"></div>
+                    <label class="block text-xs font-bold text-slate-500 mb-1">دشك (3م)</label>
+                    <input class="w-full text-2xl font-bold text-slate-800 outline-none placeholder-slate-200" id="input-seat" min="0" oninput="calculate()" placeholder="0" type="number">
+                    <div class="text-xs text-slate-400 mt-1">العدد</div>
+                </div>
+
+                <!-- Masnad -->
+                <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm card-input relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-green-500"></div>
+                    <label class="block text-xs font-bold text-slate-500 mb-1" id="label-back">مسند (2م)</label>
+                    <input class="w-full text-2xl font-bold text-slate-800 outline-none placeholder-slate-200" id="input-back" min="0" oninput="calculate()" placeholder="0" type="number">
+                    <div class="text-xs text-slate-400 mt-1">العدد</div>
+                </div>
+
+                <!-- Arni (Pillow) -->
+                <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm card-input relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-purple-500"></div>
+                    <label class="block text-xs font-bold text-slate-500 mb-1">أرني (0.5م)</label>
+                    <input class="w-full text-2xl font-bold text-slate-800 outline-none placeholder-slate-200" id="input-pillow" min="0" oninput="calculate()" placeholder="0" type="number">
+                    <div class="text-xs text-slate-400 mt-1">العدد</div>
+                </div>
+
+                <!-- Rakkai (Armrest) -->
+                <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm card-input relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-orange-500"></div>
+                    <label class="block text-xs font-bold text-slate-500 mb-1">ركاي (0.6م)</label>
+                    <input class="w-full text-2xl font-bold text-slate-800 outline-none placeholder-slate-200" id="input-arm" min="0" oninput="calculate()" placeholder="0" type="number">
+                    <div class="text-xs text-slate-400 mt-1">العدد</div>
+                </div>
+            </div>
+
+            <!-- Corner & Extras -->
+            <div class="space-y-4 mb-6">
+                <!-- Corner (Zawaya) -->
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center gap-4">
+                    <div class="bg-indigo-100 p-2 rounded-lg text-indigo-600">
+                        <span class="material-symbols-outlined">rounded_corner</span>
+                    </div>
+                    <div class="flex-1">
+                        <label class="block text-sm font-bold text-slate-700">الزاوية (مد زوايا)</label>
+                        <div class="flex items-center gap-2 mt-1">
+                            <input class="w-24 bg-slate-50 border border-slate-200 rounded p-1 text-center font-bold outline-none focus:border-indigo-500" id="input-corner-meters" oninput="calculate()" placeholder="عدد الأمتار" type="number">
+                            <span class="text-sm text-slate-500">متر</span>
+                            <span class="text-slate-300">|</span>
+                            <input class="w-20 bg-slate-50 border border-slate-200 rounded p-1 text-center font-bold outline-none focus:border-indigo-500" id="input-corner-price" oninput="calculate()" type="number" value="5">
+                            <span class="text-sm text-slate-500">$ للمتر</span>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <span class="font-bold text-indigo-700" id="display-corner-total">0.00 $</span>
+                    </div>
+                </div>
+
+                <!-- Custom Items Section -->
+                <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-bold text-slate-700 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-teal-600">add_shopping_cart</span>
+                            إضافات (إسفنج، الخ)
+                        </h3>
+                        <button class="text-xs bg-teal-100 text-teal-700 px-2 py-1 rounded hover:bg-teal-200 transition no-print" onclick="addCustomItemRow()">+ إضافة عنصر</button>
+                    </div>
+                    <div class="space-y-2" id="custom-items-list">
+                        <!-- Custom rows will be added here -->
+                    </div>
+
+                    <!-- Other Costs -->
+                    <div class="mt-4 pt-4 border-t border-slate-100">
+                        <div class="flex items-center justify-between">
+                            <label class="text-sm font-medium text-slate-600">أجور أخرى / خصم (-)</label>
+                            <div class="flex items-center gap-1">
+                                <input class="w-24 text-right bg-slate-50 border border-slate-200 rounded p-1 font-bold outline-none focus:border-teal-500" id="input-other-costs" oninput="calculate()" placeholder="0" type="number">
+                                <span class="text-sm text-slate-500">$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Upload -->
+            <div class="mb-6">
+                <div class="bg-white p-4 rounded-xl border border-dashed border-slate-300 text-center hover:bg-slate-50 transition cursor-pointer relative" onclick="document.getElementById('image-upload').click()">
+                    <input accept="image/*" class="hidden" id="image-upload" onchange="handleImageUpload(event)" type="file">
+                    <div id="image-placeholder">
+                        <span class="material-symbols-outlined text-4xl text-slate-300">add_photo_alternate</span>
+                        <p class="text-sm text-slate-500 mt-1">اضغط لإضافة صورة للمخطط أو الغرفة</p>
+                    </div>
+                    <img class="hidden max-h-48 mx-auto rounded-lg shadow-sm object-contain" id="image-preview">
+                    <button class="hidden absolute top-2 right-2 bg-red-100 text-red-600 p-1 rounded-full hover:bg-red-200 no-print" id="remove-image-btn" onclick="removeImage(event)">
+                        <span class="material-symbols-outlined text-sm">close</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Print Footer -->
+            <div class="print-only mt-8 pt-8 border-t border-slate-300">
+                <div class="flex justify-between items-end">
+                    <div class="text-sm text-gray-500">
+                        <p>توقيع المستلم:</p>
+                        <div class="h-12 w-48 border-b border-gray-300"></div>
+                    </div>
+                    <div class="text-center">
+                        <div class="font-bold text-lg text-teal-800">مفروشات حلوم</div>
+                        <p class="text-xs text-gray-500 mt-1">الجودة عنواننا</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Bottom Sheet Results -->
+        <div class="bg-white border-t border-slate-200 p-4 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] sticky bottom-0 z-40">
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div class="bg-teal-50 p-3 rounded-lg border border-teal-100">
+                    <span class="block text-xs text-teal-600 font-bold mb-1">إجمالي القماش</span>
+                    <div class="flex items-end gap-1">
+                        <span class="text-2xl font-bold text-teal-800" id="result-fabric">0.00</span>
+                        <span class="text-sm text-teal-600 mb-1">متر</span>
+                    </div>
+                </div>
+                <div class="bg-indigo-50 p-3 rounded-lg border border-indigo-100">
+                    <span class="block text-xs text-indigo-600 font-bold mb-1">التكلفة النهائية</span>
+                    <div class="flex items-end gap-1">
+                        <span class="text-2xl font-bold text-indigo-800" id="result-cost">0.00</span>
+                        <span class="text-sm text-indigo-600 mb-1">$</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="grid grid-cols-5 gap-2 no-print">
+                <button class="col-span-1 bg-slate-100 text-slate-700 py-3 rounded-lg font-bold hover:bg-slate-200 transition flex flex-col items-center justify-center gap-1" onclick="saveInvoice()">
+                    <span class="material-symbols-outlined text-xl">save</span>
+                    <span class="text-[9px] sm:text-[10px]">حفظ</span>
+                </button>
+                <button class="col-span-1 bg-red-50 text-red-600 py-3 rounded-lg font-bold hover:bg-red-100 transition flex flex-col items-center justify-center gap-1" onclick="clearAll()">
+                    <span class="material-symbols-outlined text-xl">delete</span>
+                    <span class="text-[9px] sm:text-[10px]">مسح</span>
+                </button>
+                <button class="col-span-1 bg-amber-100 text-amber-700 py-3 rounded-lg font-bold hover:bg-amber-200 transition flex flex-col items-center justify-center gap-1" onclick="exportAsImage()">
+                    <span class="material-symbols-outlined text-xl">image</span>
+                    <span class="text-[9px] sm:text-[10px]">صورة</span>
+                </button>
+                <button class="col-span-2 bg-teal-600 text-white py-3 rounded-lg font-bold hover:bg-teal-700 transition flex items-center justify-center gap-2 shadow-lg shadow-teal-200" onclick="printInvoice()">
+                    <span class="material-symbols-outlined">print</span>
+                    <span>طباعة/PDF</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Settings Modal -->
+        <div class="fixed inset-0 bg-black/50 z-[60] hidden flex items-center justify-center p-4 backdrop-blur-sm transition-opacity opacity-0" id="settings-modal">
+            <div class="bg-white rounded-2xl w-full max-w-sm max-h-[90vh] overflow-y-auto shadow-2xl transform scale-95 transition-transform">
+                <div class="p-4 border-b border-slate-100 flex justify-between items-center sticky top-0 bg-white z-10">
+                    <h2 class="text-lg font-bold text-slate-800">إعدادات الأسعار والأمتار</h2>
+                    <button class="p-1 hover:bg-slate-100 rounded-full" onclick="toggleSettings()">
+                        <span class="material-symbols-outlined">close</span>
+                    </button>
+                </div>
+                <div class="p-4 space-y-4">
+                    <div class="space-y-3">
+                        <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider">استهلاك القماش (متر)</h3>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div>
+                                <label class="text-xs block text-slate-600 mb-1">الدشك (عادي/خليجي)</label>
+                                <input class="w-full border rounded p-2 text-center font-bold" id="setting-fabric-seat" onchange="saveSettings()" type="number" value="3">
+                            </div>
+                            <div>
+                                <label class="text-xs block text-slate-600 mb-1">المسند (عادي)</label>
+                                <input class="w-full border rounded p-2 text-center font-bold" id="setting-fabric-back-normal" onchange="saveSettings()" type="number" value="2">
+                            </div>
+                            <div>
+                                <label class="text-xs block text-slate-600 mb-1">المسند (خليجي)</label>
+                                <input class="w-full border rounded p-2 text-center font-bold" id="setting-fabric-back-gulf" onchange="saveSettings()" type="number" value="2.75">
+                            </div>
+                            <div>
+                                <label class="text-xs block text-slate-600 mb-1">الأرني (مخدة)</label>
+                                <input class="w-full border rounded p-2 text-center font-bold" id="setting-fabric-pillow" onchange="saveSettings()" type="number" value="0.5">
+                            </div>
+                            <div>
+                                <label class="text-xs block text-slate-600 mb-1">الركاي</label>
+                                <input class="w-full border rounded p-2 text-center font-bold" id="setting-fabric-arm" onchange="saveSettings()" type="number" value="0.6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-px bg-slate-100"></div>
+                    <div class="space-y-3">
+                        <h3 class="text-xs font-bold text-slate-400 uppercase tracking-wider">أجور الخياطة ($)</h3>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div>
+                                <label class="text-xs block text-slate-600 mb-1">الدشك</label>
+                                <input class="w-full border rounded p-2 text-center font-bold text-indigo-600" id="setting-price-seat" onchange="saveSettings()" type="number" value="3">
+                            </div>
+                            <div>
+                                <label class="text-xs block text-slate-600 mb-1">المسند</label>
+                                <input class="w-full border rounded p-2 text-center font-bold text-indigo-600" id="setting-price-back" onchange="saveSettings()" type="number" value="3">
+                            </div>
+                            <div>
+                                <label class="text-xs block text-slate-600 mb-1">الأرني</label>
+                                <input class="w-full border rounded p-2 text-center font-bold text-indigo-600" id="setting-price-pillow" onchange="saveSettings()" type="number" value="1.5">
+                            </div>
+                            <div>
+                                <label class="text-xs block text-slate-600 mb-1">الركاي</label>
+                                <input class="w-full border rounded p-2 text-center font-bold text-indigo-600" id="setting-price-arm" onchange="saveSettings()" type="number" value="1.5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 border-t border-slate-100 bg-slate-50">
+                    <button class="w-full text-red-500 text-sm font-bold py-2 hover:bg-red-50 rounded" onclick="resetSettings()">استعادة الافتراضي</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- History Modal -->
+        <div class="fixed inset-0 bg-black/50 z-[60] hidden flex items-center justify-center p-4 backdrop-blur-sm transition-opacity opacity-0" id="history-modal">
+            <div class="bg-white rounded-2xl w-full max-w-sm h-[80vh] flex flex-col shadow-2xl transform scale-95 transition-transform">
+                <div class="p-4 border-b border-slate-100 flex justify-between items-center">
+                    <h2 class="text-lg font-bold text-slate-800">الأرشيف المحفوظ</h2>
+                    <button class="p-1 hover:bg-slate-100 rounded-full" onclick="toggleHistory()">
+                        <span class="material-symbols-outlined">close</span>
+                    </button>
+                </div>
+                <div class="flex-1 overflow-y-auto p-4 space-y-3" id="history-list"><div class="text-center text-slate-400 mt-10">لا يوجد فواتير محفوظة</div></div>
+                <div class="p-4 border-t border-slate-100 bg-slate-50">
+                    <button class="w-full text-red-500 text-sm font-bold py-2 hover:bg-red-50 rounded" onclick="clearHistory()">حذف السجل بالكامل</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Install/About Modal -->
+        <div class="fixed inset-0 bg-black/50 z-[60] flex items-center justify-center p-4 backdrop-blur-sm" id="install-modal">
+            <div class="bg-white rounded-2xl w-full max-w-sm shadow-2xl p-6 text-center">
+                <div class="w-16 h-16 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="material-symbols-outlined text-3xl">download_for_offline</span>
+                </div>
+                <h2 class="text-xl font-bold text-slate-800 mb-2">تحميل التطبيق</h2>
+                <p class="text-slate-600 text-sm mb-6">ليعمل البرنامج دون إنترنت، يمكنك تحميله كملف أو إضافته للشاشة الرئيسية.</p>
+                
+                <button class="w-full bg-teal-600 text-white font-bold py-3 rounded-lg hover:bg-teal-700 mb-4 shadow-md flex items-center justify-center gap-2" onclick="downloadOfflineCopy()">
+                    <span class="material-symbols-outlined">file_download</span>
+                    تحميل ملف البرنامج (للهاتف)
+                </button>
+
+                <div class="text-right bg-slate-50 p-3 rounded-lg text-sm text-slate-700 mb-4 space-y-2 border border-slate-100">
+                    <p class="font-bold text-xs text-slate-400 uppercase">طرق أخرى</p>
+                    <p class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-lg text-slate-500">ios</span>
+                        <span>ايفون: زر المشاركة &gt; إضافة للشاشة الرئيسية</span>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-lg text-slate-500">android</span>
+                        <span>أندرويد: القائمة &gt; تثبيت التطبيق</span>
+                    </p>
+                </div>
+                <button class="w-full text-slate-500 font-bold py-2 hover:bg-slate-100 rounded-lg" onclick="document.getElementById('install-modal').classList.add('hidden')">إغلاق</button>
+            </div>
+        </div>
+        
+        <!-- Invisible Container for Image Export -->
+        <div id="export-container">
+            <div class="border-2 border-teal-700 p-8 rounded-xl bg-white relative">
+                <!-- Watermark -->
+                <div class="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none">
+                     <span class="material-symbols-outlined text-[300px]">chair</span>
+                </div>
+                
+                <!-- Export Header -->
+                <div class="text-center mb-8 border-b-2 border-teal-600 pb-4">
+                    <div class="flex justify-center mb-2">
+                         <div class="w-20 h-20 bg-teal-800 rounded-full text-white flex items-center justify-center">
+                             <div class="text-center leading-none">
+                                <span class="block text-[10px] mb-1">مفروشات</span>
+                                <span class="block text-xl font-bold">حلوم</span>
+                            </div>
+                         </div>
+                    </div>
+                    <h1 class="text-3xl font-bold text-teal-800">فاتورة مفروشات</h1>
+                    <p class="text-sm text-gray-500 mt-2" id="export-date"></p>
+                </div>
+                
+                <!-- Export Details -->
+                <div class="grid grid-cols-2 gap-4 mb-6 text-right">
+                    <div class="bg-gray-50 p-3 rounded">
+                        <span class="block text-xs text-gray-500">العميل</span>
+                        <span class="font-bold text-lg" id="export-customer"></span>
+                    </div>
+                     <div class="bg-gray-50 p-3 rounded">
+                        <span class="block text-xs text-gray-500">التاريخ</span>
+                        <span class="font-bold text-lg" id="export-invoice-date"></span>
+                    </div>
+                </div>
+                
+                <!-- Export Items Table -->
+                <table class="w-full mb-6 text-right border-collapse">
+                    <thead>
+                        <tr class="bg-teal-50 text-teal-800">
+                            <th class="p-2 border border-teal-100">الصنف</th>
+                            <th class="p-2 border border-teal-100 text-center">العدد/الكمية</th>
+                            <th class="p-2 border border-teal-100 text-center">السعر</th>
+                            <th class="p-2 border border-teal-100 text-center">الإجمالي</th>
+                        </tr>
+                    </thead>
+                    <tbody id="export-items-body" class="text-sm">
+                        <!-- Filled by JS -->
+                    </tbody>
+                </table>
+                
+                <!-- Export Totals -->
+                <div class="flex justify-end mt-4">
+                    <div class="w-1/2 space-y-2">
+                        <div class="flex justify-between p-2 bg-gray-50 rounded">
+                            <span>إجمالي القماش:</span>
+                            <span class="font-bold" id="export-total-fabric"></span>
+                        </div>
+                        <div class="flex justify-between p-3 bg-teal-800 text-white rounded text-lg font-bold">
+                            <span>المبلغ النهائي:</span>
+                            <span id="export-total-cost"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Export Footer -->
+                <div class="mt-8 text-center text-xs text-gray-400">
+                    <p>تم الحساب بواسطة تطبيق مفروشات حلوم</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // --- State Management ---
+        const DEFAULT_SETTINGS = {
+            fabric: {
+                seat: 3,
+                backNormal: 2,
+                backGulf: 2.75,
+                pillow: 0.5,
+                arm: 0.6
+            },
+            prices: {
+                seat: 3,
+                back: 3,
+                pillow: 1.5,
+                arm: 1.5
+            }
+        };
+
+        let settings = JSON.parse(localStorage.getItem('appSettings')) || JSON.parse(JSON.stringify(DEFAULT_SETTINGS));
+        let currentMode = 'normal'; // 'normal' or 'gulf'
+        let customItems = [];
+
+        // --- Initialization ---
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set today's date
+            document.getElementById('invoice-date').valueAsDate = new Date();
+            document.getElementById('print-date').innerText = new Date().toLocaleDateString('ar-EG', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+            
+            // Load settings into input fields
+            loadSettingsToInputs();
+            
+            // Initial calc
+            calculate();
+
+            // Render History
+            renderHistory();
+        });
+
+        // --- Core Logic ---
+        function setMode(mode) {
+            currentMode = mode;
+            const btnNormal = document.getElementById('btn-mode-normal');
+            const btnGulf = document.getElementById('btn-mode-gulf');
+            const labelBack = document.getElementById('label-back');
+            const desc = document.getElementById('mode-desc');
+
+            if (mode === 'normal') {
+                btnNormal.className = "flex items-center justify-center gap-2 p-3 rounded-lg border-2 border-teal-600 bg-teal-50 text-teal-700 font-bold transition shadow-sm";
+                btnGulf.className = "flex items-center justify-center gap-2 p-3 rounded-lg border border-slate-300 text-slate-600 hover:bg-slate-50 transition";
+                labelBack.innerText = `مسند (${settings.fabric.backNormal}م)`;
+                desc.innerText = `* المسند (الظهر) يحتاج ${settings.fabric.backNormal} متر من القماش`;
+            } else {
+                btnGulf.className = "flex items-center justify-center gap-2 p-3 rounded-lg border-2 border-teal-600 bg-teal-50 text-teal-700 font-bold transition shadow-sm";
+                btnNormal.className = "flex items-center justify-center gap-2 p-3 rounded-lg border border-slate-300 text-slate-600 hover:bg-slate-50 transition";
+                labelBack.innerText = `مسند (${settings.fabric.backGulf}م)`;
+                desc.innerText = `* المسند (الظهر) يحتاج ${settings.fabric.backGulf} متر من القماش (خليجي)`;
+            }
+            calculate();
+        }
+
+        function calculate() {
+            // Inputs
+            const qtySeat = parseFloat(document.getElementById('input-seat').value) || 0;
+            const qtyBack = parseFloat(document.getElementById('input-back').value) || 0;
+            const qtyPillow = parseFloat(document.getElementById('input-pillow').value) || 0;
+            const qtyArm = parseFloat(document.getElementById('input-arm').value) || 0;
+            
+            const cornerMeters = parseFloat(document.getElementById('input-corner-meters').value) || 0;
+            const cornerPrice = parseFloat(document.getElementById('input-corner-price').value) || 5;
+            const otherCosts = parseFloat(document.getElementById('input-other-costs').value) || 0;
+
+            // Rates based on mode
+            const fabricSeat = settings.fabric.seat;
+            const fabricBack = currentMode === 'normal' ? settings.fabric.backNormal : settings.fabric.backGulf;
+            const fabricPillow = settings.fabric.pillow;
+            const fabricArm = settings.fabric.arm;
+
+            // 1. Calculate Fabric
+            const totalFabric = (qtySeat * fabricSeat) + 
+                                (qtyBack * fabricBack) + 
+                                (qtyPillow * fabricPillow) + 
+                                (qtyArm * fabricArm);
+
+            // 2. Calculate Costs
+            const laborCost = (qtySeat * settings.prices.seat) +
+                              (qtyBack * settings.prices.back) +
+                              (qtyPillow * settings.prices.pillow) +
+                              (qtyArm * settings.prices.arm);
+            
+            const cornerCost = cornerMeters * cornerPrice;
+            
+            // Custom items cost
+            let customItemsCost = 0;
+            const customRows = document.querySelectorAll('.custom-item-row');
+            customRows.forEach(row => {
+                const price = parseFloat(row.querySelector('.c-price').value) || 0;
+                const qty = parseFloat(row.querySelector('.c-qty').value) || 1;
+                customItemsCost += (price * qty);
+            });
+
+            const totalCost = laborCost + cornerCost + customItemsCost + otherCosts;
+
+            // UI Updates
+            document.getElementById('result-fabric').innerText = totalFabric.toFixed(2);
+            document.getElementById('result-cost').innerText = totalCost.toFixed(2);
+            document.getElementById('display-corner-total').innerText = cornerCost.toFixed(2) + ' $';
+
+            return {
+                totalFabric,
+                totalCost,
+                breakdown: {
+                    seat: { qty: qtySeat, price: settings.prices.seat * qtySeat },
+                    back: { qty: qtyBack, price: settings.prices.back * qtyBack },
+                    pillow: { qty: qtyPillow, price: settings.prices.pillow * qtyPillow },
+                    arm: { qty: qtyArm, price: settings.prices.arm * qtyArm },
+                    corner: { qty: cornerMeters, price: cornerCost },
+                    other: otherCosts,
+                    custom: customItemsCost
+                }
+            };
+        }
+
+        // --- Custom Items Logic ---
+        function addCustomItemRow() {
+            const container = document.getElementById('custom-items-list');
+            const div = document.createElement('div');
+            div.className = "custom-item-row flex items-center gap-2 fade-in";
+            div.innerHTML = `
+                <input type="text" class="c-name w-1/2 bg-slate-50 border border-slate-200 rounded p-2 text-sm outline-none focus:border-teal-500" placeholder="اسم العنصر">
+                <input type="number" class="c-qty w-16 bg-slate-50 border border-slate-200 rounded p-2 text-center text-sm font-bold outline-none focus:border-teal-500" placeholder="عدد" value="1" oninput="calculate()">
+                <input type="number" class="c-price w-20 bg-slate-50 border border-slate-200 rounded p-2 text-center text-sm font-bold outline-none focus:border-teal-500" placeholder="سعر" oninput="calculate()">
+                <button onclick="this.parentElement.remove(); calculate()" class="text-red-400 hover:text-red-600 p-1 no-print"><span class="material-symbols-outlined text-lg">delete</span></button>
+            `;
+            container.appendChild(div);
+        }
+
+        // --- Image Handling ---
+        function handleImageUpload(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const img = document.getElementById('image-preview');
+                    img.src = e.target.result;
+                    img.classList.remove('hidden');
+                    document.getElementById('image-placeholder').classList.add('hidden');
+                    document.getElementById('remove-image-btn').classList.remove('hidden');
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        function removeImage(e) {
+            e.stopPropagation();
+            document.getElementById('image-upload').value = "";
+            document.getElementById('image-preview').classList.add('hidden');
+            document.getElementById('image-preview').src = "";
+            document.getElementById('image-placeholder').classList.remove('hidden');
+            document.getElementById('remove-image-btn').classList.add('hidden');
+        }
+
+        // --- Settings Management ---
+        function toggleSettings() {
+            const modal = document.getElementById('settings-modal');
+            const isHidden = modal.classList.contains('hidden');
+            
+            if (isHidden) {
+                modal.classList.remove('hidden');
+                setTimeout(() => {
+                    modal.classList.remove('opacity-0');
+                    modal.querySelector('div').classList.remove('scale-95');
+                }, 10);
+                loadSettingsToInputs();
+            } else {
+                modal.classList.add('opacity-0');
+                modal.querySelector('div').classList.add('scale-95');
+                setTimeout(() => modal.classList.add('hidden'), 300);
+            }
+        }
+
+        function loadSettingsToInputs() {
+            document.getElementById('setting-fabric-seat').value = settings.fabric.seat;
+            document.getElementById('setting-fabric-back-normal').value = settings.fabric.backNormal;
+            document.getElementById('setting-fabric-back-gulf').value = settings.fabric.backGulf;
+            document.getElementById('setting-fabric-pillow').value = settings.fabric.pillow;
+            document.getElementById('setting-fabric-arm').value = settings.fabric.arm;
+
+            document.getElementById('setting-price-seat').value = settings.prices.seat;
+            document.getElementById('setting-price-back').value = settings.prices.back;
+            document.getElementById('setting-price-pillow').value = settings.prices.pillow;
+            document.getElementById('setting-price-arm').value = settings.prices.arm;
+        }
+
+        function saveSettings() {
+            settings.fabric.seat = parseFloat(document.getElementById('setting-fabric-seat').value);
+            settings.fabric.backNormal = parseFloat(document.getElementById('setting-fabric-back-normal').value);
+            settings.fabric.backGulf = parseFloat(document.getElementById('setting-fabric-back-gulf').value);
+            settings.fabric.pillow = parseFloat(document.getElementById('setting-fabric-pillow').value);
+            settings.fabric.arm = parseFloat(document.getElementById('setting-fabric-arm').value);
+
+            settings.prices.seat = parseFloat(document.getElementById('setting-price-seat').value);
+            settings.prices.back = parseFloat(document.getElementById('setting-price-back').value);
+            settings.prices.pillow = parseFloat(document.getElementById('setting-price-pillow').value);
+            settings.prices.arm = parseFloat(document.getElementById('setting-price-arm').value);
+
+            localStorage.setItem('appSettings', JSON.stringify(settings));
+            setMode(currentMode);
+        }
+
+        function resetSettings() {
+            if(confirm("هل أنت متأكد من استعادة الإعدادات الافتراضية؟")) {
+                settings = JSON.parse(JSON.stringify(DEFAULT_SETTINGS));
+                localStorage.setItem('appSettings', JSON.stringify(settings));
+                loadSettingsToInputs();
+                setMode(currentMode);
+                toggleSettings();
+            }
+        }
+
+        // --- History / Actions ---
+        function clearAll() {
+            if(confirm("مسح جميع البيانات الحالية وبدء ورقة جديدة؟")) {
+                document.getElementById('input-seat').value = '';
+                document.getElementById('input-back').value = '';
+                document.getElementById('input-pillow').value = '';
+                document.getElementById('input-arm').value = '';
+                document.getElementById('input-corner-meters').value = '';
+                document.getElementById('input-other-costs').value = '';
+                document.getElementById('custom-items-list').innerHTML = '';
+                document.getElementById('customer-name').value = '';
+                removeImage({stopPropagation: ()=>{}});
+                calculate();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+        }
+
+        function printInvoice() {
+            const customerName = document.getElementById('customer-name').value || "عميل نقدي";
+            document.title = `فاتورة - ${customerName}`;
+            window.print();
+            setTimeout(() => { document.title = "حاسبة المفروشات المتقدمة"; }, 1000);
+        }
+
+        function installApp() {
+            const modal = document.getElementById('install-modal');
+            modal.classList.remove('hidden');
+        }
+
+        function saveInvoice() {
+            const name = document.getElementById('customer-name').value;
+            if(!name) {
+                alert("يرجى كتابة اسم العميل للحفظ");
+                return;
+            }
+            const data = calculate();
+            const invoice = {
+                id: Date.now(),
+                name: name,
+                date: document.getElementById('invoice-date').value,
+                cost: data.totalCost.toFixed(2),
+                fabric: data.totalFabric.toFixed(2)
+            };
+
+            let history = JSON.parse(localStorage.getItem('invoiceHistory')) || [];
+            history.unshift(invoice); // Add to top
+            localStorage.setItem('invoiceHistory', JSON.stringify(history));
+            
+            alert("تم الحفظ في الأرشيف");
+            renderHistory();
+        }
+
+        function toggleHistory() {
+            const modal = document.getElementById('history-modal');
+            const isHidden = modal.classList.contains('hidden');
+            if (isHidden) {
+                renderHistory();
+                modal.classList.remove('hidden');
+                setTimeout(() => {
+                    modal.classList.remove('opacity-0');
+                    modal.querySelector('div').classList.remove('scale-95');
+                }, 10);
+            } else {
+                modal.classList.add('opacity-0');
+                modal.querySelector('div').classList.add('scale-95');
+                setTimeout(() => modal.classList.add('hidden'), 300);
+            }
+        }
+
+        function renderHistory() {
+            let history = JSON.parse(localStorage.getItem('invoiceHistory')) || [];
+            const container = document.getElementById('history-list');
+            
+            if (history.length === 0) {
+                container.innerHTML = '<div class="text-center text-slate-400 mt-10">لا يوجد فواتير محفوظة</div>';
+                return;
+            }
+
+            container.innerHTML = history.map(item => `
+                <div class="bg-slate-50 p-3 rounded-lg border border-slate-200 flex justify-between items-center">
+                    <div>
+                        <div class="font-bold text-slate-800">${item.name}</div>
+                        <div class="text-xs text-slate-500">${item.date}</div>
+                    </div>
+                    <div class="text-left">
+                        <div class="font-bold text-indigo-600">${item.cost} $</div>
+                        <div class="text-xs text-teal-600">${item.fabric} م</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function clearHistory() {
+            if(confirm("هل أنت متأكد من حذف كل السجل؟")) {
+                localStorage.removeItem('invoiceHistory');
+                renderHistory();
+            }
+        }
+
+        // --- Download & Export Features ---
+
+        // 1. Download Offline Copy
+        function downloadOfflineCopy() {
+            // Get current HTML
+            const htmlContent = document.documentElement.outerHTML;
+            
+            // Create Blob
+            const blob = new Blob([htmlContent], {type: 'text/html'});
+            const url = URL.createObjectURL(blob);
+            
+            // Trigger Download
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'haloum-furniture-app.html';
+            document.body.appendChild(a);
+            a.click();
+            
+            // Cleanup
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // 2. Export as Image
+        function exportAsImage() {
+            // Populate Export Container
+            document.getElementById('export-date').innerText = new Date().toLocaleString('ar-EG');
+            document.getElementById('export-customer').innerText = document.getElementById('customer-name').value || 'عميل نقدي';
+            document.getElementById('export-invoice-date').innerText = document.getElementById('invoice-date').value;
+            
+            // Build Table Items
+            const tbody = document.getElementById('export-items-body');
+            tbody.innerHTML = '';
+            
+            const data = calculate();
+            
+            // Helper row builder
+            const addRow = (name, qty, price, total) => {
+                if (qty > 0) {
+                    tbody.innerHTML += `
+                        <tr class="border-b border-gray-100">
+                            <td class="p-2">${name}</td>
+                            <td class="p-2 text-center text-gray-600">${qty}</td>
+                            <td class="p-2 text-center text-gray-600">${price}</td>
+                            <td class="p-2 text-center font-bold">${total.toFixed(2)} $</td>
+                        </tr>`;
+                }
+            };
+            
+            addRow('دشك', parseFloat(document.getElementById('input-seat').value)||0, settings.prices.seat, data.breakdown.seat.price);
+            addRow('مسند', parseFloat(document.getElementById('input-back').value)||0, settings.prices.back, data.breakdown.back.price);
+            addRow('أرني', parseFloat(document.getElementById('input-pillow').value)||0, settings.prices.pillow, data.breakdown.pillow.price);
+            addRow('ركاي', parseFloat(document.getElementById('input-arm').value)||0, settings.prices.arm, data.breakdown.arm.price);
+            if (data.breakdown.corner.qty > 0) {
+                addRow('زاوية (متر)', data.breakdown.corner.qty, parseFloat(document.getElementById('input-corner-price').value), data.breakdown.corner.price);
+            }
+            if (data.breakdown.other > 0 || data.breakdown.other < 0) {
+                 tbody.innerHTML += `
+                        <tr class="border-b border-gray-100">
+                            <td class="p-2">أجور أخرى / خصم</td>
+                            <td class="p-2 text-center text-gray-600">-</td>
+                            <td class="p-2 text-center text-gray-600">-</td>
+                            <td class="p-2 text-center font-bold">${data.breakdown.other.toFixed(2)} $</td>
+                        </tr>`;
+            }
+
+            // Custom Items
+            const customRows = document.querySelectorAll('.custom-item-row');
+            customRows.forEach(row => {
+                const name = row.querySelector('.c-name').value || 'اضافة';
+                const qty = parseFloat(row.querySelector('.c-qty').value) || 0;
+                const price = parseFloat(row.querySelector('.c-price').value) || 0;
+                if(qty > 0) addRow(name, qty, price, qty*price);
+            });
+
+            document.getElementById('export-total-fabric').innerText = data.totalFabric.toFixed(2) + ' متر';
+            document.getElementById('export-total-cost').innerText = data.totalCost.toFixed(2) + ' $';
+
+            // Generate Image
+            const element = document.getElementById('export-container');
+            
+            // Show loading or disable button here if desired
+            
+            html2canvas(element.querySelector('div'), { // Target the inner div to avoid whitespace issues
+                scale: 2, // Higher resolution
+                useCORS: true,
+                backgroundColor: '#ffffff'
+            }).then(canvas => {
+                const link = document.createElement('a');
+                link.download = `فاتورة-حلوم-${Date.now()}.png`;
+                link.href = canvas.toDataURL("image/png");
+                link.click();
+            }).catch(err => {
+                alert("حدث خطأ أثناء حفظ الصورة");
+                console.error(err);
+            });
+        }
+
+    </script>
+
+
+</body></html>
