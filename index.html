@@ -1,0 +1,1097 @@
+<html dir="rtl" lang="ar"><head>
+
+<script class="injected-ffc2e83d85">
+(function(){'use strict';function m(a){var c=0;return function(){return c<a.length?{done:!1,value:a[c++]}:{done:!0}}}function r(a){var c=typeof Symbol!="undefined"&&Symbol.iterator&&a[Symbol.iterator];if(c)return c.call(a);if(typeof a.length=="number")return{next:m(a)};throw Error(String(a)+" is not an iterable or ArrayLike");}var t=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,c,g){if(a==Array.prototype||a==Object.prototype)return a;a[c]=g.value;return a};
+function u(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var c=0;c<a.length;++c){var g=a[c];if(g&&g.Math==Math)return g}throw Error("Cannot find global object");}var v=u(this);function x(a,c){if(c)a:{var g=v;a=a.split(".");for(var h=0;h<a.length-1;h++){var l=a[h];if(!(l in g))break a;g=g[l]}a=a[a.length-1];h=g[a];c=c(h);c!=h&&c!=null&&t(g,a,{configurable:!0,writable:!0,value:c})}}
+function y(a){if(!(a instanceof Object))throw new TypeError("Iterator result "+a+" is not an object");}function z(){this.o=!1;this.j=null;this.u=void 0;this.g=1;this.i=this.l=0;this.C=this.h=null}function A(a){if(a.o)throw new TypeError("Generator is already running");a.o=!0}z.prototype.v=function(a){this.u=a};function B(a,c){a.h={K:c,L:!0};a.g=a.l||a.i}z.prototype.getNextAddressJsc=function(){return this.g};z.prototype.getYieldResultJsc=function(){return this.u};
+z.prototype.return=function(a){this.h={return:a};this.g=this.i};z.prototype["return"]=z.prototype.return;z.prototype.N=function(a){this.h={B:a};this.g=this.i};z.prototype.jumpThroughFinallyBlocks=z.prototype.N;z.prototype.A=function(a,c){this.g=c;return{value:a}};z.prototype.yield=z.prototype.A;z.prototype.R=function(a,c){a=r(a);var g=a.next();y(g);if(g.done)this.u=g.value,this.g=c;else return this.j=a,this.A(g.value,c)};z.prototype.yieldAll=z.prototype.R;z.prototype.B=function(a){this.g=a};
+z.prototype.jumpTo=z.prototype.B;z.prototype.F=function(){this.g=0};z.prototype.jumpToEnd=z.prototype.F;z.prototype.H=function(a,c){this.l=a;c!=void 0&&(this.i=c)};z.prototype.setCatchFinallyBlocks=z.prototype.H;z.prototype.P=function(a){this.l=0;this.i=a||0};z.prototype.setFinallyBlock=z.prototype.P;z.prototype.G=function(a,c){this.g=a;this.l=c||0};z.prototype.leaveTryBlock=z.prototype.G;z.prototype.D=function(a){this.l=a||0;a=this.h.K;this.h=null;return a};z.prototype.enterCatchBlock=z.prototype.D;
+z.prototype.J=function(a,c,g){g?this.C[g]=this.h:this.C=[this.h];this.l=a||0;this.i=c||0};z.prototype.enterFinallyBlock=z.prototype.J;z.prototype.O=function(a,c){c=this.C.splice(c||0)[0];(c=this.h=this.h||c)?c.L?this.g=this.l||this.i:c.B!=void 0&&this.i<c.B?(this.g=c.B,this.h=null):this.g=this.i:this.g=a};z.prototype.leaveFinallyBlock=z.prototype.O;z.prototype.M=function(a){return new C(a)};z.prototype.forIn=z.prototype.M;
+function C(a){this.i=a;this.g=[];for(var c in a)this.g.push(c);this.g.reverse()}C.prototype.h=function(){for(;this.g.length>0;){var a=this.g.pop();if(a in this.i)return a}return null};C.prototype.getNext=C.prototype.h;function F(a){this.g=new z;this.h=a}function G(a,c){A(a.g);var g=a.g.j;if(g)return H(a,"return"in g?g["return"]:function(h){return{value:h,done:!0}},c,a.g.return);a.g.return(c);return I(a)}
+function H(a,c,g,h){try{var l=c.call(a.g.j,g);y(l);if(!l.done)return a.g.o=!1,l;var n=l.value}catch(f){return a.g.j=null,B(a.g,f),I(a)}a.g.j=null;h.call(a.g,n);return I(a)}function I(a){for(;a.g.g;)try{var c=a.h(a.g);if(c)return a.g.o=!1,{value:c.value,done:!1}}catch(g){a.g.u=void 0,B(a.g,g)}a.g.o=!1;if(a.g.h){c=a.g.h;a.g.h=null;if(c.L)throw c.K;return{value:c.return,done:!0}}return{value:void 0,done:!0}}
+function J(a){this.next=function(c){A(a.g);a.g.j?c=H(a,a.g.j.next,c,a.g.v):(a.g.v(c),c=I(a));return c};this.throw=function(c){A(a.g);a.g.j?c=H(a,a.g.j["throw"],c,a.g.v):(B(a.g,c),c=I(a));return c};this.return=function(c){return G(a,c)};this[Symbol.iterator]=function(){return this}}function K(a){function c(h){return a.next(h)}function g(h){return a.throw(h)}return new Promise(function(h,l){function n(f){f.done?h(f.value):Promise.resolve(f.value).then(c,g).then(n,l)}n(a.next())})}
+x("Symbol",function(a){function c(n){if(this instanceof c)throw new TypeError("Symbol is not a constructor");return new g(h+(n||"")+"_"+l++,n)}function g(n,f){this.g=n;t(this,"description",{configurable:!0,writable:!0,value:f})}if(a)return a;g.prototype.toString=function(){return this.g};var h="jscomp_symbol_"+(Math.random()*1E9>>>0)+"_",l=0;return c});
+x("Symbol.iterator",function(a){if(a)return a;a=Symbol("Symbol.iterator");t(Array.prototype,a,{configurable:!0,writable:!0,value:function(){return L(m(this))}});return a});function L(a){a={next:a};a[Symbol.iterator]=function(){return this};return a}
+x("Promise",function(a){function c(f){this.h=0;this.i=void 0;this.g=[];this.u=!1;var b=this.j();try{f(b.resolve,b.reject)}catch(d){b.reject(d)}}function g(){this.g=null}function h(f){return f instanceof c?f:new c(function(b){b(f)})}if(a)return a;g.prototype.h=function(f){if(this.g==null){this.g=[];var b=this;this.i(function(){b.l()})}this.g.push(f)};var l=v.setTimeout;g.prototype.i=function(f){l(f,0)};g.prototype.l=function(){for(;this.g&&this.g.length;){var f=this.g;this.g=[];for(var b=0;b<f.length;++b){var d=
+f[b];f[b]=null;try{d()}catch(e){this.j(e)}}}this.g=null};g.prototype.j=function(f){this.i(function(){throw f;})};c.prototype.j=function(){function f(e){return function(k){d||(d=!0,e.call(b,k))}}var b=this,d=!1;return{resolve:f(this.F),reject:f(this.l)}};c.prototype.F=function(f){if(f===this)this.l(new TypeError("A Promise cannot resolve to itself"));else if(f instanceof c)this.H(f);else{a:switch(typeof f){case "object":var b=f!=null;break a;case "function":b=!0;break a;default:b=!1}b?this.D(f):this.o(f)}};
+c.prototype.D=function(f){var b=void 0;try{b=f.then}catch(d){this.l(d);return}typeof b=="function"?this.J(b,f):this.o(f)};c.prototype.l=function(f){this.v(2,f)};c.prototype.o=function(f){this.v(1,f)};c.prototype.v=function(f,b){if(this.h!=0)throw Error("Cannot settle("+f+", "+b+"): Promise already settled in state"+this.h);this.h=f;this.i=b;this.h===2&&this.G();this.C()};c.prototype.G=function(){var f=this;l(function(){if(f.A()){var b=v.console;typeof b!=="undefined"&&b.error(f.i)}},1)};c.prototype.A=
+function(){if(this.u)return!1;var f=v.CustomEvent,b=v.Event,d=v.dispatchEvent;if(typeof d==="undefined")return!0;typeof f==="function"?f=new f("unhandledrejection",{cancelable:!0}):typeof b==="function"?f=new b("unhandledrejection",{cancelable:!0}):(f=v.document.createEvent("CustomEvent"),f.initCustomEvent("unhandledrejection",!1,!0,f));f.promise=this;f.reason=this.i;return d(f)};c.prototype.C=function(){if(this.g!=null){for(var f=0;f<this.g.length;++f)n.h(this.g[f]);this.g=null}};var n=new g;c.prototype.H=
+function(f){var b=this.j();f.I(b.resolve,b.reject)};c.prototype.J=function(f,b){var d=this.j();try{f.call(b,d.resolve,d.reject)}catch(e){d.reject(e)}};c.prototype.then=function(f,b){function d(p,w){return typeof p=="function"?function(D){try{e(p(D))}catch(E){k(E)}}:w}var e,k,q=new c(function(p,w){e=p;k=w});this.I(d(f,e),d(b,k));return q};c.prototype.catch=function(f){return this.then(void 0,f)};c.prototype.I=function(f,b){function d(){switch(e.h){case 1:f(e.i);break;case 2:b(e.i);break;default:throw Error("Unexpected state: "+
+e.h);}}var e=this;this.g==null?n.h(d):this.g.push(d);this.u=!0};c.resolve=h;c.reject=function(f){return new c(function(b,d){d(f)})};c.race=function(f){return new c(function(b,d){for(var e=r(f),k=e.next();!k.done;k=e.next())h(k.value).I(b,d)})};c.all=function(f){var b=r(f),d=b.next();return d.done?h([]):new c(function(e,k){function q(D){return function(E){p[D]=E;w--;w==0&&e(p)}}var p=[],w=0;do p.push(void 0),w++,h(d.value).I(q(p.length-1),k),d=b.next();while(!d.done)})};return c});
+function M(a,c){return Object.prototype.hasOwnProperty.call(a,c)}x("Object.is",function(a){return a?a:function(c,g){return c===g?c!==0||1/c===1/g:c!==c&&g!==g}});x("Array.prototype.includes",function(a){return a?a:function(c,g){var h=this;h instanceof String&&(h=String(h));var l=h.length;g=g||0;for(g<0&&(g=Math.max(g+l,0));g<l;g++){var n=h[g];if(n===c||Object.is(n,c))return!0}return!1}});
+x("String.prototype.includes",function(a){return a?a:function(c,g){if(this==null)throw new TypeError("The 'this' value for String.prototype.includes must not be null or undefined");if(c instanceof RegExp)throw new TypeError("First argument to String.prototype.includes must not be a regular expression");return this.indexOf(c,g||0)!==-1}});
+x("WeakMap",function(a){function c(d){this.g=(b+=Math.random()+1).toString();if(d){d=r(d);for(var e;!(e=d.next()).done;)e=e.value,this.set(e[0],e[1])}}function g(){}function h(d){var e=typeof d;return e==="object"&&d!==null||e==="function"}function l(d){if(!M(d,f)){var e=new g;t(d,f,{value:e})}}function n(d){var e=Object[d];e&&(Object[d]=function(k){if(k instanceof g)return k;Object.isExtensible(k)&&l(k);return e(k)})}if(function(){if(!a||!Object.seal)return!1;try{var d=Object.seal({}),e=Object.seal({}),
+k=new a([[d,2],[e,3]]);if(k.get(d)!=2||k.get(e)!=3)return!1;k.delete(d);k.set(e,4);return!k.has(d)&&k.get(e)==4}catch(q){return!1}}())return a;var f="$jscomp_hidden_"+Math.random();n("freeze");n("preventExtensions");n("seal");var b=0;c.prototype.set=function(d,e){if(!h(d))throw Error("Invalid WeakMap key");l(d);if(!M(d,f))throw Error("WeakMap key fail: "+d);d[f][this.g]=e;return this};c.prototype.get=function(d){return h(d)&&M(d,f)?d[f][this.g]:void 0};c.prototype.has=function(d){return h(d)&&M(d,
+f)&&M(d[f],this.g)};c.prototype.delete=function(d){return h(d)&&M(d,f)&&M(d[f],this.g)?delete d[f][this.g]:!1};return c});
+x("Map",function(a){function c(){var b={};return b.m=b.next=b.head=b}function g(b,d){var e=b[1];return L(function(){if(e){for(;e.head!=b[1];)e=e.m;for(;e.next!=e.head;)return e=e.next,{done:!1,value:d(e)};e=null}return{done:!0,value:void 0}})}function h(b,d){var e=d&&typeof d;e=="object"||e=="function"?n.has(d)?e=n.get(d):(e=""+ ++f,n.set(d,e)):e="p_"+d;var k=b[0][e];if(k&&M(b[0],e))for(b=0;b<k.length;b++){var q=k[b];if(d!==d&&q.key!==q.key||d===q.key)return{id:e,list:k,index:b,entry:q}}return{id:e,
+list:k,index:-1,entry:void 0}}function l(b){this[0]={};this[1]=c();this.size=0;if(b){b=r(b);for(var d;!(d=b.next()).done;)d=d.value,this.set(d[0],d[1])}}if(function(){if(!a||typeof a!="function"||!a.prototype.entries||typeof Object.seal!="function")return!1;try{var b=Object.seal({x:4}),d=new a(r([[b,"s"]]));if(d.get(b)!="s"||d.size!=1||d.get({x:4})||d.set({x:4},"t")!=d||d.size!=2)return!1;var e=d.entries(),k=e.next();if(k.done||k.value[0]!=b||k.value[1]!="s")return!1;k=e.next();return k.done||k.value[0].x!=
+4||k.value[1]!="t"||!e.next().done?!1:!0}catch(q){return!1}}())return a;var n=new WeakMap;l.prototype.set=function(b,d){b=b===0?0:b;var e=h(this,b);e.list||(e.list=this[0][e.id]=[]);e.entry?e.entry.value=d:(e.entry={next:this[1],m:this[1].m,head:this[1],key:b,value:d},e.list.push(e.entry),this[1].m.next=e.entry,this[1].m=e.entry,this.size++);return this};l.prototype.delete=function(b){b=h(this,b);return b.entry&&b.list?(b.list.splice(b.index,1),b.list.length||delete this[0][b.id],b.entry.m.next=b.entry.next,
+b.entry.next.m=b.entry.m,b.entry.head=null,this.size--,!0):!1};l.prototype.clear=function(){this[0]={};this[1]=this[1].m=c();this.size=0};l.prototype.has=function(b){return!!h(this,b).entry};l.prototype.get=function(b){return(b=h(this,b).entry)&&b.value};l.prototype.entries=function(){return g(this,function(b){return[b.key,b.value]})};l.prototype.keys=function(){return g(this,function(b){return b.key})};l.prototype.values=function(){return g(this,function(b){return b.value})};l.prototype.forEach=
+function(b,d){for(var e=this.entries(),k;!(k=e.next()).done;)k=k.value,b.call(d,k[1],k[0],this)};l.prototype[Symbol.iterator]=l.prototype.entries;var f=0;return l});
+x("Set",function(a){function c(g){this.g=new Map;if(g){g=r(g);for(var h;!(h=g.next()).done;)this.add(h.value)}this.size=this.g.size}if(function(){if(!a||typeof a!="function"||!a.prototype.entries||typeof Object.seal!="function")return!1;try{var g=Object.seal({x:4}),h=new a(r([g]));if(!h.has(g)||h.size!=1||h.add(g)!=h||h.size!=1||h.add({x:4})!=h||h.size!=2)return!1;var l=h.entries(),n=l.next();if(n.done||n.value[0]!=g||n.value[1]!=g)return!1;n=l.next();return n.done||n.value[0]==g||n.value[0].x!=4||
+n.value[1]!=n.value[0]?!1:l.next().done}catch(f){return!1}}())return a;c.prototype.add=function(g){g=g===0?0:g;this.g.set(g,g);this.size=this.g.size;return this};c.prototype.delete=function(g){g=this.g.delete(g);this.size=this.g.size;return g};c.prototype.clear=function(){this.g.clear();this.size=0};c.prototype.has=function(g){return this.g.has(g)};c.prototype.entries=function(){return this.g.entries()};c.prototype.values=function(){return this.g.values()};c.prototype.keys=c.prototype.values;c.prototype[Symbol.iterator]=
+c.prototype.values;c.prototype.forEach=function(g,h){var l=this;this.g.forEach(function(n){return g.call(h,n,n,l)})};return c});(function(){function a(){return n?Promise.resolve(n):f?f:f=fetch("https://www.gstatic.com/bard-maui/resources/material-design-icon-names.804824289.json").then(function(b){if(!b.ok)throw Error("HTTP error! status: "+b.status+" fetching https://www.gstatic.com/bard-maui/resources/material-design-icon-names.804824289.json");return b.json()}).then(function(b){if(!Array.isArray(b))throw new TypeError("Fetched icon names from https://www.gstatic.com/bard-maui/resources/material-design-icon-names.804824289.json is not an array.");
+return n=b}).catch(function(b){console.error("IconChecker: Failed to load valid icon names from https://www.gstatic.com/bard-maui/resources/material-design-icon-names.804824289.json.",b);f=null;throw b;})}function c(b){var d,e,k,q;return K(new J(new F(function(p){switch(p.g){case 1:d=(b.textContent||"").trim();if(!d||b.classList.contains("js-replaced-missing-icon")&&d==="radio_button_unchecked")return p.return();e=window.getComputedStyle(b);if(e.display==="none"||e.visibility==="hidden")return p.return();
+p.H(2);return p.A(a(),4);case 4:k=p.u;p.G(3);break;case 2:return p.D(),console.warn('IconChecker: Skipping check for icon "'+d+'" as valid names could not be loaded.'),p.return();case 3:(q=k.includes(d))?b.classList.contains("js-replaced-missing-icon")&&b.classList.remove("js-replaced-missing-icon"):d==="radio_button_unchecked"&&b.classList.contains("js-replaced-missing-icon")||(b.textContent="radio_button_unchecked",b.classList.add("js-replaced-missing-icon")),p.F()}})))}function g(b){b=b===void 0?
+document.body:b;b.querySelectorAll(l).forEach(function(d){c(d)})}function h(){a().catch(function(){});document.fonts.ready.then(function(){requestAnimationFrame(function(){g(document.body);(new MutationObserver(function(b){var d=new Set;b=r(b);for(var e=b.next();!e.done;e=b.next())if(e=e.value,e.type==="childList")e.addedNodes.forEach(function(q){q.nodeType===Node.ELEMENT_NODE&&(q.matches(l)&&d.add(q),q.querySelectorAll(l).forEach(function(p){d.add(p)}))});else if(e.type==="attributes"&&e.attributeName===
+"class"){var k=e.target;e.target.nodeType===Node.ELEMENT_NODE&&k.matches(l)&&d.add(k)}else e.type==="characterData"&&e.target.parentNode&&(e=e.target.parentNode,e.nodeType===Node.ELEMENT_NODE&&e.matches(l)&&d.add(e));d.size>0&&setTimeout(function(){d.forEach(function(q){c(q)})},500)})).observe(document.body,{childList:!0,subtree:!0,attributes:!0,attributeFilter:["class"],characterData:!0})})}).catch(function(b){console.error("IconChecker: Font loading error. Scanning icons anyway.",b);requestAnimationFrame(function(){g(document.body)})})}
+var l=["material-icons","material-symbols-outlined","material-symbols-rounded","material-symbols-sharp"].map(function(b){return"."+b}).join(","),n=null,f=null;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",function(){h()}):h()})();}).call(this);
+
+
+</script>
+
+<meta name="surface-hint" content="desktop-responsive" data-hint="injected-ffc2e83d85">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>برنامج حلوم للمفروشات - الإصدار الاحترافي</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&amp;display=swap" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+    <!-- html2canvas for Screenshot functionality -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f3f4f6;
+            -webkit-print-color-adjust: exact;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94a3b8; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b; 
+        }
+
+        .tab-active {
+            border-bottom: 3px solid #b45309; /* amber-700 */
+            color: #b45309;
+            font-weight: bold;
+            background-color: #fffbeb;
+        }
+        
+        .tab-inactive {
+            color: #6b7280;
+            border-bottom: 3px solid transparent;
+        }
+        .tab-inactive:hover {
+            color: #374151;
+            border-bottom: 3px solid #d1d5db;
+        }
+
+        /* Print Specifics */
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            .print-only {
+                display: block !important;
+            }
+            body {
+                background-color: white;
+                margin: 0;
+                padding: 0;
+            }
+            #app-container {
+                box-shadow: none;
+                border: none;
+                width: 100%;
+                max-width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            .tab-content {
+                display: block !important;
+                margin-bottom: 20px;
+                page-break-inside: avoid;
+                border: 1px solid #eee;
+                border-radius: 8px;
+                padding: 15px;
+            }
+            .tab-nav-container {
+                display: none;
+            }
+            input, select {
+                border: none;
+                background: transparent;
+                padding: 0;
+                font-weight: bold;
+                color: black;
+                width: auto;
+                appearance: none;
+                -webkit-appearance: none;
+            }
+            input:placeholder-shown {
+                display: none;
+            }
+            #standardInputs.hidden, #cornerInputs.hidden {
+                display: none !important;
+            }
+        }
+
+        /* Screenshot Mode Class */
+        .screenshot-mode .no-print {
+            display: none !important;
+        }
+        .screenshot-mode .tab-content {
+            display: block !important;
+            margin-bottom: 20px;
+            border: 1px solid #e2e8f0;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        .screenshot-mode .tab-nav-container {
+            display: none;
+        }
+        .screenshot-mode {
+            background: white;
+            padding: 20px;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.inset-y-0{top:0px;bottom:0px}.bottom-0{bottom:0px}.left-0{left:0px}.left-4{left:1rem}.right-0{right:0px}.right-2{right:0.5rem}.top-0{top:0px}.top-1\/2{top:50%}.top-2{top:0.5rem}.z-10{z-index:10}.z-50{z-index:50}.col-span-2{grid-column:span 2 / span 2}.mx-4{margin-left:1rem;margin-right:1rem}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-12{margin-right:3rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-1{height:0.25rem}.h-10{height:2.5rem}.h-8{height:2rem}.h-fit{height:-moz-fit-content;height:fit-content}.max-h-64{max-height:16rem}.max-h-\[90vh\]{max-height:90vh}.min-h-\[400px\]{min-height:400px}.min-h-screen{min-height:100vh}.w-1{width:0.25rem}.w-1\/2{width:50%}.w-10{width:2.5rem}.w-20{width:5rem}.w-32{width:8rem}.w-8{width:2rem}.w-full{width:100%}.max-w-4xl{max-width:56rem}.max-w-lg{max-width:32rem}.flex-1{flex:1 1 0%}.flex-\[2\]{flex:2}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.-translate-y-4{--tw-translate-y:-1rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-4{--tw-translate-x:1rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-8{gap:2rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-slate-100 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(241 245 249 / var(--tw-divide-opacity, 1))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.rounded-b-xl{border-bottom-right-radius:0.75rem;border-bottom-left-radius:0.75rem}.rounded-t-xl{border-top-left-radius:0.75rem;border-top-right-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-t{border-top-width:1px}.border-t-0{border-top-width:0px}.border-dashed{border-style:dashed}.border-amber-100{--tw-border-opacity:1;border-color:rgb(254 243 199 / var(--tw-border-opacity, 1))}.border-amber-200{--tw-border-opacity:1;border-color:rgb(253 230 138 / var(--tw-border-opacity, 1))}.border-amber-300{--tw-border-opacity:1;border-color:rgb(252 211 77 / var(--tw-border-opacity, 1))}.border-amber-400{--tw-border-opacity:1;border-color:rgb(251 191 36 / var(--tw-border-opacity, 1))}.border-blue-100{--tw-border-opacity:1;border-color:rgb(219 234 254 / var(--tw-border-opacity, 1))}.border-blue-200{--tw-border-opacity:1;border-color:rgb(191 219 254 / var(--tw-border-opacity, 1))}.border-gray-100{--tw-border-opacity:1;border-color:rgb(243 244 246 / var(--tw-border-opacity, 1))}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235 / var(--tw-border-opacity, 1))}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.border-green-100{--tw-border-opacity:1;border-color:rgb(220 252 231 / var(--tw-border-opacity, 1))}.border-green-300{--tw-border-opacity:1;border-color:rgb(134 239 172 / var(--tw-border-opacity, 1))}.border-red-100{--tw-border-opacity:1;border-color:rgb(254 226 226 / var(--tw-border-opacity, 1))}.border-red-200{--tw-border-opacity:1;border-color:rgb(254 202 202 / var(--tw-border-opacity, 1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225 / var(--tw-border-opacity, 1))}.border-slate-600{--tw-border-opacity:1;border-color:rgb(71 85 105 / var(--tw-border-opacity, 1))}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.bg-amber-600{--tw-bg-opacity:1;background-color:rgb(217 119 6 / var(--tw-bg-opacity, 1))}.bg-blue-50{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-green-50{--tw-bg-opacity:1;background-color:rgb(240 253 244 / var(--tw-bg-opacity, 1))}.bg-green-500{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.bg-green-600{--tw-bg-opacity:1;background-color:rgb(22 163 74 / var(--tw-bg-opacity, 1))}.bg-red-100{--tw-bg-opacity:1;background-color:rgb(254 226 226 / var(--tw-bg-opacity, 1))}.bg-red-600{--tw-bg-opacity:1;background-color:rgb(220 38 38 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252 / var(--tw-bg-opacity, 1))}.bg-slate-700{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-opacity-75{--tw-bg-opacity:0.75}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-blue-600{--tw-gradient-from:#2563eb var(--tw-gradient-from-position);--tw-gradient-to:rgb(37 99 235 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-slate-50{--tw-gradient-from:#f8fafc var(--tw-gradient-from-position);--tw-gradient-to:rgb(248 250 252 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-blue-800{--tw-gradient-to:#1e40af var(--tw-gradient-to-position)}.to-white{--tw-gradient-to:#fff var(--tw-gradient-to-position)}.p-1{padding:0.25rem}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-2{padding-bottom:0.5rem}.pb-3{padding-bottom:0.75rem}.pb-4{padding-bottom:1rem}.pl-3{padding-left:0.75rem}.pr-10{padding-right:2.5rem}.pr-3{padding-right:0.75rem}.pt-2{padding-top:0.5rem}.pt-4{padding-top:1rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-9xl{font-size:8rem;line-height:1}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.tracking-wide{letter-spacing:0.025em}.text-amber-500{--tw-text-opacity:1;color:rgb(245 158 11 / var(--tw-text-opacity, 1))}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6 / var(--tw-text-opacity, 1))}.text-amber-700{--tw-text-opacity:1;color:rgb(180 83 9 / var(--tw-text-opacity, 1))}.text-amber-800{--tw-text-opacity:1;color:rgb(146 64 14 / var(--tw-text-opacity, 1))}.text-amber-900{--tw-text-opacity:1;color:rgb(120 53 15 / var(--tw-text-opacity, 1))}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-blue-700{--tw-text-opacity:1;color:rgb(29 78 216 / var(--tw-text-opacity, 1))}.text-blue-800{--tw-text-opacity:1;color:rgb(30 64 175 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-green-600{--tw-text-opacity:1;color:rgb(22 163 74 / var(--tw-text-opacity, 1))}.text-green-700{--tw-text-opacity:1;color:rgb(21 128 61 / var(--tw-text-opacity, 1))}.text-green-800{--tw-text-opacity:1;color:rgb(22 101 52 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.text-red-700{--tw-text-opacity:1;color:rgb(185 28 28 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.opacity-0{opacity:0}.opacity-10{opacity:0.1}.opacity-75{opacity:0.75}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.file\:mr-4::file-selector-button{margin-right:1rem}.file\:rounded-full::file-selector-button{border-radius:9999px}.file\:border-0::file-selector-button{border-width:0px}.file\:bg-blue-50::file-selector-button{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.file\:px-4::file-selector-button{padding-left:1rem;padding-right:1rem}.file\:py-2::file-selector-button{padding-top:0.5rem;padding-bottom:0.5rem}.file\:text-sm::file-selector-button{font-size:0.875rem;line-height:1.25rem}.file\:font-semibold::file-selector-button{font-weight:600}.file\:text-blue-700::file-selector-button{--tw-text-opacity:1;color:rgb(29 78 216 / var(--tw-text-opacity, 1))}.hover\:border-blue-500:hover{--tw-border-opacity:1;border-color:rgb(59 130 246 / var(--tw-border-opacity, 1))}.hover\:bg-amber-700:hover{--tw-bg-opacity:1;background-color:rgb(180 83 9 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-50:hover{--tw-bg-opacity:1;background-color:rgb(239 246 255 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-200:hover{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity, 1))}.hover\:bg-green-700:hover{--tw-bg-opacity:1;background-color:rgb(21 128 61 / var(--tw-bg-opacity, 1))}.hover\:bg-red-200:hover{--tw-bg-opacity:1;background-color:rgb(254 202 202 / var(--tw-bg-opacity, 1))}.hover\:bg-red-700:hover{--tw-bg-opacity:1;background-color:rgb(185 28 28 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-600:hover{--tw-bg-opacity:1;background-color:rgb(71 85 105 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-900:hover{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.hover\:text-blue-600:hover{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.hover\:text-red-500:hover{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:file\:bg-blue-100::file-selector-button:hover{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.focus\:border-amber-500:focus{--tw-border-opacity:1;border-color:rgb(245 158 11 / var(--tw-border-opacity, 1))}.focus\:border-blue-500:focus{--tw-border-opacity:1;border-color:rgb(59 130 246 / var(--tw-border-opacity, 1))}.focus\:border-green-500:focus{--tw-border-opacity:1;border-color:rgb(34 197 94 / var(--tw-border-opacity, 1))}.focus\:border-slate-500:focus{--tw-border-opacity:1;border-color:rgb(100 116 139 / var(--tw-border-opacity, 1))}.focus\:bg-white:focus{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.focus\:ring:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-4:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-amber-100:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(254 243 199 / var(--tw-ring-opacity, 1))}.focus\:ring-amber-200:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(253 230 138 / var(--tw-ring-opacity, 1))}.focus\:ring-amber-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(245 158 11 / var(--tw-ring-opacity, 1))}.focus\:ring-green-200:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(187 247 208 / var(--tw-ring-opacity, 1))}.focus\:ring-red-100:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(254 226 226 / var(--tw-ring-opacity, 1))}.group:hover .group-hover\:opacity-100{opacity:1}@media (min-width: 768px){.md\:inline{display:inline}.md\:w-3\/12{width:25%}.md\:w-4\/12{width:33.333333%}.md\:w-5\/12{width:41.666667%}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:flex-nowrap{flex-wrap:nowrap}}</style></head>
+<body class="bg-slate-100 min-h-screen text-slate-800">
+<!-- Navbar / Header -->
+<header class="bg-slate-900 text-white shadow-lg sticky top-0 z-50 no-print">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center text-white shadow-lg border-2 border-amber-400">
+<span class="material-symbols-outlined text-2xl">chair</span>
+</div>
+<h1 class="text-2xl font-extrabold tracking-wide text-white">حلوم للمفروشات</h1>
+</div>
+<p class="text-xs text-amber-500 mr-12 font-medium">نظام الحساب المتكامل</p>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="flex items-center gap-1 bg-green-600 hover:bg-green-700 text-white px-3 py-1.5 rounded-lg text-sm transition shadow" onclick="downloadApp()">
+<span class="material-symbols-outlined text-lg js-replaced-missing-icon">radio_button_unchecked</span>
+<span class="hidden md:inline">تحميل التطبيق</span>
+</button>
+<button class="flex items-center gap-1 bg-slate-700 hover:bg-slate-600 text-white px-3 py-1.5 rounded-lg text-sm transition border border-slate-600" onclick="toggleSettings()">
+<span class="material-symbols-outlined text-lg">settings</span>
+<span class="hidden md:inline">الإعدادات</span>
+</button>
+</div>
+</div>
+</header>
+<main class="container mx-auto p-4 max-w-4xl transition-all duration-300" id="app-container">
+<!-- Top Controls -->
+<div class="bg-white rounded-xl shadow-sm p-5 mb-4 grid grid-cols-1 md:grid-cols-2 gap-4 border border-slate-200" id="header-info">
+<div>
+<label class="block text-sm font-medium text-slate-600 mb-1">اسم الزبون</label>
+<div class="relative">
+<span class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-400">
+<span class="material-symbols-outlined text-lg">person</span>
+</span>
+<input class="w-full pl-3 pr-10 py-2 border-gray-300 rounded-lg shadow-sm focus:border-amber-500 focus:ring focus:ring-amber-200 border" id="customerName" placeholder="أدخل اسم الزبون" type="text">
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex-1">
+<label class="block text-sm font-medium text-slate-600 mb-1">التاريخ</label>
+<input class="w-full border-gray-300 rounded-lg shadow-sm focus:border-amber-500 focus:ring focus:ring-amber-200 p-2 border" id="orderDate" type="date">
+</div>
+<div class="flex-1">
+<label class="block text-sm font-bold text-green-700 mb-1">سعر الصرف ($)</label>
+<div class="relative">
+<span class="absolute inset-y-0 right-0 flex items-center pr-3 text-green-600">
+<span class="material-symbols-outlined text-lg">currency_exchange</span>
+</span>
+<input class="w-full pl-3 pr-10 py-2 border-green-300 bg-green-50 rounded-lg shadow-sm focus:border-green-500 focus:ring focus:ring-green-200 border text-center font-bold" id="exchangeRate" oninput="calculateAll()" type="number" value="1">
+</div>
+</div>
+</div>
+</div>
+<!-- Tabs Navigation -->
+<div class="tab-nav-container flex border-b border-gray-200 bg-white rounded-t-xl overflow-hidden shadow-sm no-print">
+<button class="flex-1 py-4 text-center transition duration-300 tab-active group" id="btn-tab1" onclick="switchTab('tab1')">
+<span class="flex items-center justify-center gap-2 text-lg">
+<span class="material-symbols-outlined">straighten</span> القسم الأول
+            </span>
+<span class="text-xs opacity-75">الأمتار والأجرة</span>
+</button>
+<button class="flex-1 py-4 text-center transition duration-300 tab-inactive group" id="btn-tab2" onclick="switchTab('tab2')">
+<span class="flex items-center justify-center gap-2 text-lg">
+<span class="material-symbols-outlined">layers</span> القسم الثاني
+            </span>
+<span class="text-xs opacity-75">البضاعة والإسفنج</span>
+</button>
+<button class="flex-1 py-4 text-center transition duration-300 tab-inactive group" id="btn-tab3" onclick="switchTab('tab3')">
+<span class="flex items-center justify-center gap-2 text-lg">
+<span class="material-symbols-outlined">receipt_long</span> القسم الثالث
+            </span>
+<span class="text-xs opacity-75">الفاتورة النهائية</span>
+</button>
+</div>
+<!-- Content Area -->
+<div class="bg-white rounded-b-xl shadow-md border border-t-0 border-slate-200 p-6 min-h-[400px]">
+<!-- Section 1: Fabric & Labor -->
+<div class="tab-content block" id="tab1">
+<div class="flex justify-between items-center mb-6 bg-amber-50 p-3 rounded-lg border border-amber-100">
+<h2 class="text-xl font-bold text-amber-800 flex items-center gap-2">
+<span class="material-symbols-outlined">straighten</span> حساب الأمتار والأجرة
+                </h2>
+<select class="border-amber-300 bg-white text-amber-900 rounded-lg shadow-sm focus:ring-amber-500 p-2 border text-sm font-bold" id="madType" onchange="handleMadTypeChange()">
+<option value="normal">المد العادي</option>
+<option value="khaliji">المد الخليجي</option>
+<option value="corner">المد زوايا</option>
+</select>
+</div>
+<!-- Standard Inputs (Normal / Khaliji) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in" id="standardInputs">
+<div class="space-y-5">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-amber-600 shadow-sm border border-slate-200"><span class="material-symbols-outlined">chair</span></div>
+<div class="flex-1">
+<label class="text-xs font-bold text-slate-500 uppercase">عدد الدشكات</label>
+<input class="w-full p-2 border-b-2 border-slate-200 focus:border-amber-500 outline-none bg-transparent transition-colors font-semibold" id="countDashk" oninput="calculateAll()" placeholder="0" type="number">
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-amber-600 shadow-sm border border-slate-200"><span class="material-symbols-outlined">chair_alt</span></div>
+<div class="flex-1">
+<label class="text-xs font-bold text-slate-500 uppercase">عدد المساند (الظهر)</label>
+<input class="w-full p-2 border-b-2 border-slate-200 focus:border-amber-500 outline-none bg-transparent transition-colors font-semibold" id="countMasnad" oninput="calculateAll()" placeholder="0" type="number">
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-amber-600 shadow-sm border border-slate-200"><span class="material-symbols-outlined">bedroom_child</span></div>
+<div class="flex-1">
+<label class="text-xs font-bold text-slate-500 uppercase">عدد الأرني (المخدة)</label>
+<input class="w-full p-2 border-b-2 border-slate-200 focus:border-amber-500 outline-none bg-transparent transition-colors font-semibold" id="countArni" oninput="calculateAll()" placeholder="0" type="number">
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-amber-600 shadow-sm border border-slate-200"><span class="material-symbols-outlined">weekend</span></div>
+<div class="flex-1">
+<label class="text-xs font-bold text-slate-500 uppercase">عدد الركايات</label>
+<input class="w-full p-2 border-b-2 border-slate-200 focus:border-amber-500 outline-none bg-transparent transition-colors font-semibold" id="countRakkai" oninput="calculateAll()" placeholder="0" type="number">
+</div>
+</div>
+</div>
+</div>
+<!-- Corner Inputs (Only for Corner Mode) -->
+<div class="hidden animate-fade-in bg-amber-50 p-6 rounded-xl border border-amber-200 mb-6" id="cornerInputs">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div>
+<label class="block text-sm font-bold text-amber-900 mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined">straighten</span> طول الزاوية (عدد الأمتار)
+                        </label>
+<div class="relative">
+<input class="w-full p-4 text-xl border-2 border-amber-300 rounded-lg focus:border-amber-500 focus:ring-4 focus:ring-amber-100 outline-none font-bold text-center bg-white" id="cornerLength" oninput="calculateAll()" placeholder="0" type="number">
+<span class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 font-bold">متر</span>
+</div>
+<p class="text-xs text-amber-700 mt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">info</span>
+                            يتم ضرب الأمتار تلقائياً في السعر المحدد للإعدادات
+                        </p>
+</div>
+<div class="bg-white p-4 rounded-lg shadow-sm">
+<div class="mb-4 pb-4 border-b border-gray-100">
+<div class="text-xs text-gray-500 mb-1">اجمالي القماش المطلوب (تلقائي x 2.5)</div>
+<div class="text-2xl font-bold text-blue-600"><span id="cornerFabricResult">0</span> <span class="text-sm text-gray-400">متر</span></div>
+</div>
+<div>
+<div class="text-xs text-gray-500 mb-1">تكلفة الأجرة (تلقائي x 5$)</div>
+<div class="text-2xl font-bold text-amber-700">$<span id="cornerLaborResult">0</span></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Common Extra Costs & Results -->
+<div class="pt-4 mt-6 border-t border-dashed border-slate-300">
+<label class="text-sm font-medium text-slate-700 flex items-center gap-1"><span class="material-symbols-outlined text-sm">add_circle</span> إضافات على الأجرة</label>
+<div class="flex gap-2 mt-2">
+<input class="flex-[2] p-2 border rounded-md text-sm bg-slate-50 focus:bg-white transition" id="extraLaborName" placeholder="البيان (مثلاً: نقل)" type="text">
+<input class="flex-1 p-2 border rounded-md text-sm bg-slate-50 focus:bg-white transition" id="extraLaborCost" oninput="calculateAll()" placeholder="القيمة" type="number">
+</div>
+</div>
+<!-- Main Results Preview (Summary for Tab 1) -->
+<div class="bg-gradient-to-br from-slate-50 to-white p-5 rounded-xl border border-slate-200 h-fit shadow-sm relative overflow-hidden mt-6">
+<div class="absolute top-0 left-0 w-full h-1 bg-amber-500"></div>
+<h3 class="font-bold text-slate-800 mb-4 pb-2 border-b flex justify-between items-center">
+                    ملخص القسم الأول
+                    <span class="text-xs font-normal bg-amber-100 text-amber-800 px-2 py-1 rounded-full">النتائج</span>
+</h3>
+<div class="mb-4">
+<div class="flex justify-between items-end mb-1">
+<span class="text-slate-600 text-sm">إجمالي القماش المطلوب</span>
+<span class="font-bold text-2xl text-blue-600"><span id="totalMetersDisplay">0.00</span> <span class="text-sm text-slate-400">متر</span></span>
+</div>
+<div class="text-xs text-slate-500 bg-blue-50 p-2 rounded border border-blue-100 leading-relaxed" id="metersBreakdown">لا يوجد قياسات مدخلة</div>
+</div>
+<div class="flex justify-between items-center bg-amber-50 p-4 rounded-lg border border-amber-100 mt-4">
+<div>
+<span class="block text-xs text-amber-600 font-bold uppercase mb-1">مجموع الأجرة (الخياطة)</span>
+<span class="block text-xs text-slate-400">شامل الإضافات</span>
+</div>
+<span class="font-black text-2xl text-amber-700">$<span id="totalLaborDisplay">0.00</span></span>
+</div>
+</div>
+</div>
+<!-- Section 2: Foam (Sponge) -->
+<div class="tab-content hidden" id="tab2">
+<div class="flex justify-between items-center mb-6 bg-blue-50 p-3 rounded-lg border border-blue-100">
+<h2 class="text-xl font-bold text-blue-800 flex items-center gap-2">
+<span class="material-symbols-outlined">layers</span> حساب البضاعة (الإسفنج)
+                </h2>
+<div class="text-xs text-blue-600 bg-white px-2 py-1 rounded border border-blue-200">
+                    الأسعار قابلة للتعديل من الإعدادات
+                </div>
+</div>
+<div class="space-y-6">
+<!-- Dashk Foam -->
+<div class="bg-white p-4 rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition">
+<div class="flex flex-wrap md:flex-nowrap gap-4 items-end">
+<div class="w-full md:w-5/12">
+<label class="flex items-center gap-1 text-xs font-bold text-slate-500 mb-2 uppercase"><span class="material-symbols-outlined text-sm">chair</span> نوع الدشك</label>
+<select class="w-full p-2.5 border rounded-lg bg-slate-50 focus:bg-white transition" id="foamDashkType" onchange="calculateAll()">
+<option value="none">-- اختر النوع --</option>
+<option value="dashk_70">عرض 70 سم ($14)</option>
+<option value="dashk_80">عرض 80 سم ($17)</option>
+</select>
+</div>
+<div class="w-1/2 md:w-3/12">
+<label class="block text-xs font-bold text-slate-500 mb-2 uppercase">العدد</label>
+<input class="w-full p-2.5 border rounded-lg text-center font-bold" id="foamDashkCount" oninput="calculateAll()" placeholder="0" type="number">
+</div>
+<div class="w-1/2 md:w-4/12 flex flex-col items-end justify-center bg-blue-50 rounded-lg p-2">
+<span class="text-xs text-blue-400 font-bold">المجموع</span>
+<span class="font-bold text-xl text-blue-700">$<span id="foamDashkTotal">0</span></span>
+</div>
+</div>
+</div>
+<!-- Masnad Foam -->
+<div class="bg-white p-4 rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition">
+<div class="flex flex-wrap md:flex-nowrap gap-4 items-end">
+<div class="w-full md:w-5/12">
+<label class="flex items-center gap-1 text-xs font-bold text-slate-500 mb-2 uppercase"><span class="material-symbols-outlined text-sm">chair_alt</span> نوع المسند</label>
+<select class="w-full p-2.5 border rounded-lg bg-slate-50 focus:bg-white transition" id="foamMasnadType" onchange="calculateAll()">
+<option value="none">-- اختر النوع --</option>
+<option value="masnad_normal">عادي قناطر ($8)</option>
+<option value="masnad_12">كسحة سماكة 12سم ($12)</option>
+<option value="masnad_14">كسحة سماكة 14سم ($14)</option>
+</select>
+</div>
+<div class="w-1/2 md:w-3/12">
+<label class="block text-xs font-bold text-slate-500 mb-2 uppercase">العدد</label>
+<input class="w-full p-2.5 border rounded-lg text-center font-bold" id="foamMasnadCount" oninput="calculateAll()" placeholder="0" type="number">
+</div>
+<div class="w-1/2 md:w-4/12 flex flex-col items-end justify-center bg-blue-50 rounded-lg p-2">
+<span class="text-xs text-blue-400 font-bold">المجموع</span>
+<span class="font-bold text-xl text-blue-700">$<span id="foamMasnadTotal">0</span></span>
+</div>
+</div>
+</div>
+<!-- Rakkai Foam -->
+<div class="bg-white p-4 rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition">
+<div class="flex flex-wrap md:flex-nowrap gap-4 items-end">
+<div class="w-full md:w-5/12">
+<label class="flex items-center gap-1 text-xs font-bold text-slate-500 mb-2 uppercase"><span class="material-symbols-outlined text-sm">weekend</span> نوع الركايات</label>
+<select class="w-full p-2.5 border rounded-lg bg-slate-50 focus:bg-white transition" id="foamRakkaiType" onchange="calculateAll()">
+<option value="none">-- اختر النوع --</option>
+<option value="rakkai_car">موديل سيارة ($5)</option>
+<option value="rakkai_circle">موديل دائرة حديثة ($6)</option>
+</select>
+</div>
+<div class="w-1/2 md:w-3/12">
+<label class="block text-xs font-bold text-slate-500 mb-2 uppercase">العدد</label>
+<input class="w-full p-2.5 border rounded-lg text-center font-bold" id="foamRakkaiCount" oninput="calculateAll()" placeholder="0" type="number">
+</div>
+<div class="w-1/2 md:w-4/12 flex flex-col items-end justify-center bg-blue-50 rounded-lg p-2">
+<span class="text-xs text-blue-400 font-bold">المجموع</span>
+<span class="font-bold text-xl text-blue-700">$<span id="foamRakkaiTotal">0</span></span>
+</div>
+</div>
+</div>
+<!-- Corner Foam (NEW SECTION) -->
+<div class="bg-amber-50 p-4 rounded-lg border border-amber-200 shadow-sm hover:shadow-md transition">
+<h3 class="text-sm font-bold text-amber-800 mb-3 flex items-center gap-2"><span class="material-symbols-outlined text-base">dashboard_customize</span> زوايا الإسفنج</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Floor Corner -->
+<div class="bg-white p-3 rounded-lg border border-amber-100">
+<div class="flex justify-between items-center mb-2">
+<label class="text-xs font-bold text-slate-500" id="label_zwaya_ardiya">زاوية أرضية ($12)</label>
+</div>
+<div class="flex gap-2">
+<input class="w-20 p-2 border rounded-lg text-center font-bold text-sm" id="foamZwayaArdiyaCount" oninput="calculateAll()" placeholder="العدد" type="number">
+<div class="flex-1 flex items-center justify-end bg-slate-50 rounded px-2">
+<span class="font-bold text-amber-700">$<span id="foamZwayaArdiyaTotal">0</span></span>
+</div>
+</div>
+</div>
+<!-- Back Corner -->
+<div class="bg-white p-3 rounded-lg border border-amber-100">
+<div class="flex justify-between items-center mb-2">
+<label class="text-xs font-bold text-slate-500" id="label_zwaya_dahriya">زاوية ضهرية ($15)</label>
+</div>
+<div class="flex gap-2">
+<input class="w-20 p-2 border rounded-lg text-center font-bold text-sm" id="foamZwayaDahriyaCount" oninput="calculateAll()" placeholder="العدد" type="number">
+<div class="flex-1 flex items-center justify-end bg-slate-50 rounded px-2">
+<span class="font-bold text-amber-700">$<span id="foamZwayaDahriyaTotal">0</span></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Extra Items -->
+<div class="space-y-2" id="extraItemsContainer"></div>
+<button class="w-full py-3 border-2 border-dashed border-slate-300 rounded-lg text-slate-500 hover:border-blue-500 hover:text-blue-600 hover:bg-blue-50 transition flex items-center justify-center gap-2 no-print" onclick="addExtraItem()">
+<span class="material-symbols-outlined">add_circle</span> إضافة صنف بضاعة آخر
+                </button>
+<div class="flex justify-between items-center bg-gradient-to-r from-blue-600 to-blue-800 text-white p-4 rounded-lg mt-6 shadow-lg">
+<span class="font-bold flex items-center gap-2"><span class="material-symbols-outlined">shopping_cart</span> مجموع الإسفنج والبضاعة</span>
+<span class="font-bold text-2xl">$<span id="totalFoamDisplay">0.00</span></span>
+</div>
+</div>
+</div>
+<!-- Section 3: Totals & Print -->
+<div class="tab-content hidden" id="tab3">
+<div class="flex justify-between items-center mb-6 bg-green-50 p-3 rounded-lg border border-green-100">
+<h2 class="text-xl font-bold text-green-800 flex items-center gap-2">
+<span class="material-symbols-outlined">receipt_long</span> الفاتورة النهائية
+                </h2>
+</div>
+<div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm mb-6 relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-green-500"></div>
+<h3 class="font-bold text-slate-700 mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-green-600">texture</span> حساب كلفة القماش
+                </h3>
+<div class="flex flex-col md:flex-row gap-4 items-end">
+<div class="flex-1 w-full">
+<label class="block text-xs font-bold text-slate-500 mb-1">عدد الأمتار الإجمالي</label>
+<div class="p-2.5 border rounded bg-gray-100 font-bold text-slate-600 flex justify-between">
+<span id="finalTotalMetersText">0.00</span>
+<span class="text-xs text-gray-400">متر</span>
+</div>
+</div>
+<div class="flex-1 w-full">
+<label class="block text-xs font-bold text-slate-500 mb-1">سعر المتر ($)</label>
+<input class="w-full p-2.5 border rounded focus:ring-2 focus:ring-green-200 transition outline-none" id="fabricPricePerMeter" oninput="calculateAll()" placeholder="أدخل السعر" type="number">
+</div>
+<div class="flex-1 w-full bg-green-50 rounded p-2 border border-green-100 text-left">
+<div class="text-xs text-green-600">إجمالي القماش</div>
+<div class="font-bold text-xl text-green-700">$<span id="totalFabricCostDisplay">0.00</span></div>
+</div>
+</div>
+</div>
+<!-- Summary Table -->
+<div class="border rounded-xl overflow-hidden mb-6 shadow-sm">
+<table class="w-full text-sm">
+<thead class="bg-slate-800 text-white">
+<tr><th class="p-3 text-right">تفاصيل الفاتورة</th><th class="p-3 text-left w-32">القيمة ($)</th></tr>
+</thead>
+<tbody class="divide-y divide-slate-100 bg-white">
+<tr><td class="p-3 text-slate-600">مجموع الأجرة (الخياطة)</td><td class="p-3 text-left font-medium text-slate-800">$<span id="summaryLabor">0.00</span></td></tr>
+<tr><td class="p-3 text-slate-600">مجموع الإسفنج والبضاعة</td><td class="p-3 text-left font-medium text-slate-800">$<span id="summaryFoam">0.00</span></td></tr>
+<tr><td class="p-3 text-slate-600">سعر القماش</td><td class="p-3 text-left font-medium text-slate-800">$<span id="summaryFabric">0.00</span></td></tr>
+<tr class="bg-slate-50"><td class="p-3 font-bold text-lg text-slate-800">الإجمالي الكلي</td><td class="p-3 text-left font-bold text-lg text-green-700">$<span id="grandTotalUSD">0.00</span></td></tr>
+<tr class="bg-green-600 text-white"><td class="p-3 font-bold flex items-center gap-2"><span class="material-symbols-outlined text-sm">currency_exchange</span> بالعملة المحلية (سعر الصرف: <span id="rateDisplay">1</span>)</td><td class="p-3 text-left font-bold text-xl"><span id="grandTotalLocal">0</span></td></tr>
+</tbody>
+</table>
+</div>
+<!-- Payments -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+<div class="bg-white p-4 rounded-xl border border-red-100 shadow-sm">
+<label class="block text-sm font-bold text-slate-700 mb-2 flex items-center gap-1"><span class="material-symbols-outlined text-red-500">payments</span> العربون / المدفوع ($)</label>
+<input class="w-full p-3 border border-red-200 rounded-lg focus:ring-2 focus:ring-red-100 text-lg font-bold" id="depositAmount" oninput="calculateAll()" placeholder="0" type="number">
+</div>
+<div class="bg-slate-800 text-white p-4 rounded-xl shadow-lg flex flex-col justify-center relative overflow-hidden">
+<div class="absolute right-0 top-0 opacity-10 transform translate-x-4 -translate-y-4"><span class="material-symbols-outlined text-9xl">account_balance_wallet</span></div>
+<div class="text-sm text-slate-300 mb-1 z-10">المتبقي للدفع</div>
+<div class="font-bold text-3xl z-10">$<span id="remainingBalance">0.00</span></div>
+</div>
+</div>
+<!-- Image Upload -->
+<div class="mb-6 bg-slate-50 p-4 rounded-xl border border-dashed border-slate-300 no-print">
+<label class="flex items-center gap-2 text-sm font-medium text-slate-700 mb-2 cursor-pointer">
+<span class="material-symbols-outlined">image</span> إضافة صورة (تصميم/غرفة)
+                </label>
+<input accept="image/*" class="block w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 transition" id="imageUpload" onchange="handleImageUpload(event)" type="file">
+<div class="mt-4 hidden relative group inline-block" id="imagePreviewContainer">
+<img class="max-h-64 rounded-lg shadow-lg border" id="imagePreview">
+<button class="absolute top-2 right-2 bg-red-600 text-white p-1 rounded-full shadow hover:bg-red-700 transition opacity-0 group-hover:opacity-100" onclick="clearImage()" title="حذف الصورة">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-col md:flex-row gap-3 no-print mt-8">
+<button class="flex-1 bg-amber-600 text-white py-3 rounded-lg hover:bg-amber-700 transition flex items-center justify-center gap-2 shadow-md font-bold" onclick="takeSnapshot()">
+<span class="material-symbols-outlined">photo_camera</span> صورة للفاتورة
+                </button>
+<button class="flex-1 bg-slate-800 text-white py-3 rounded-lg hover:bg-slate-900 transition flex items-center justify-center gap-2 shadow-md font-bold" onclick="window.print()">
+<span class="material-symbols-outlined">print</span> طباعة / PDF
+                </button>
+<button class="flex-1 bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition flex items-center justify-center gap-2 shadow-md font-bold" onclick="shareFullDetails()">
+<span class="material-symbols-outlined">share</span> مشاركة واتساب
+                </button>
+<button class="flex-1 bg-red-100 text-red-700 py-3 rounded-lg hover:bg-red-200 transition flex items-center justify-center gap-2 shadow-sm font-bold" onclick="resetApp()">
+<span class="material-symbols-outlined">restart_alt</span> مسح
+                </button>
+</div>
+</div>
+</div>
+<!-- Footer for Print/Image -->
+<div class="mt-8 text-center print-only">
+<div class="flex items-center justify-center gap-2 mb-2">
+<div class="w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center text-white"><span class="material-symbols-outlined text-sm">chair</span></div>
+<span class="font-bold text-xl text-slate-800">حلوم للمفروشات</span>
+</div>
+<p class="text-sm text-gray-500">شكراً لثقتكم بنا | تم الإنشاء بواسطة تطبيق حلوم</p>
+</div>
+</main>
+<!-- Settings Modal -->
+<div class="fixed inset-0 bg-slate-900 bg-opacity-75 z-50 hidden flex items-center justify-center backdrop-blur-sm" id="settingsModal">
+<div class="bg-white rounded-xl shadow-2xl p-6 w-full max-w-lg mx-4 relative max-h-[90vh] flex flex-col">
+<div class="flex justify-between items-center mb-4 border-b pb-3">
+<h3 class="text-xl font-bold text-slate-800 flex items-center gap-2">
+<span class="material-symbols-outlined text-slate-500">settings</span> الإعدادات والأسعار
+            </h3>
+<button class="text-gray-400 hover:text-red-500 transition" onclick="toggleSettings()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="overflow-y-auto flex-1 space-y-6 p-1">
+<!-- Labor Settings -->
+<div class="bg-amber-50 p-4 rounded-lg border border-amber-100">
+<h4 class="font-bold text-sm text-amber-800 mb-3 flex items-center gap-1"><span class="material-symbols-outlined text-xs">payments</span> أسعار الأجرة (الخياطة) $</h4>
+<div class="grid grid-cols-2 gap-3 text-sm">
+<div><label class="block text-xs text-slate-500 mb-1">الدشك</label><input class="w-full border rounded p-2 focus:border-amber-500 outline-none" id="setting_labor_dashk" type="number"></div>
+<div><label class="block text-xs text-slate-500 mb-1">المسند</label><input class="w-full border rounded p-2 focus:border-amber-500 outline-none" id="setting_labor_masnad" type="number"></div>
+<div><label class="block text-xs text-slate-500 mb-1">الأرني</label><input class="w-full border rounded p-2 focus:border-amber-500 outline-none" id="setting_labor_arni" type="number"></div>
+<div><label class="block text-xs text-slate-500 mb-1">الركاي</label><input class="w-full border rounded p-2 focus:border-amber-500 outline-none" id="setting_labor_rakkai" type="number"></div>
+<!-- Corner Settings -->
+<div class="col-span-2 border-t border-amber-200 mt-2 pt-2">
+<h5 class="font-bold text-xs text-amber-800 mb-2">إعدادات الزاوية (القسم الأول)</h5>
+<div class="grid grid-cols-2 gap-2">
+<div>
+<label class="block text-xs text-slate-500 mb-1">أجرة الزاوية (لكل متر)</label>
+<input class="w-full border rounded p-2 focus:border-amber-500 outline-none bg-white" id="setting_labor_zwaya" type="number">
+</div>
+<div>
+<label class="block text-xs text-slate-500 mb-1">استهلاك القماش (متر قماش/متر طول)</label>
+<input class="w-full border rounded p-2 focus:border-amber-500 outline-none bg-white" id="setting_con_zwaya_fabric" type="number">
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Foam Settings -->
+<div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+<h4 class="font-bold text-sm text-blue-800 mb-3 flex items-center gap-1"><span class="material-symbols-outlined text-xs">chair</span> أسعار الإسفنج والبضاعة $</h4>
+<div class="grid grid-cols-2 gap-3 text-sm">
+<div><label class="block text-xs text-slate-500 mb-1">دشك (عرض 70)</label><input class="w-full border rounded p-2 focus:border-blue-500 outline-none" id="setting_foam_dashk_70" type="number"></div>
+<div><label class="block text-xs text-slate-500 mb-1">دشك (عرض 80)</label><input class="w-full border rounded p-2 focus:border-blue-500 outline-none" id="setting_foam_dashk_80" type="number"></div>
+<div><label class="block text-xs text-slate-500 mb-1">مسند (عادي)</label><input class="w-full border rounded p-2 focus:border-blue-500 outline-none" id="setting_foam_masnad_normal" type="number"></div>
+<div><label class="block text-xs text-slate-500 mb-1">مسند (12 سم)</label><input class="w-full border rounded p-2 focus:border-blue-500 outline-none" id="setting_foam_masnad_12" type="number"></div>
+<div class="col-span-2"><label class="block text-xs text-slate-500 mb-1">مسند (14 سم)</label><input class="w-full border rounded p-2 focus:border-blue-500 outline-none" id="setting_foam_masnad_14" type="number"></div>
+<div><label class="block text-xs text-slate-500 mb-1">ركاي (سيارة)</label><input class="w-full border rounded p-2 focus:border-blue-500 outline-none" id="setting_foam_rakkai_car" type="number"></div>
+<div><label class="block text-xs text-slate-500 mb-1">ركاي (دائرة)</label><input class="w-full border rounded p-2 focus:border-blue-500 outline-none" id="setting_foam_rakkai_circle" type="number"></div>
+<!-- New Corner Foam Settings -->
+<div class="col-span-2 border-t border-blue-200 mt-2 pt-2">
+<h5 class="font-bold text-xs text-blue-800 mb-2">إعدادات الزوايا (الإسفنج)</h5>
+<div class="grid grid-cols-2 gap-2">
+<div>
+<label class="block text-xs text-slate-500 mb-1">زاوية أرضية</label>
+<input class="w-full border rounded p-2 focus:border-blue-500 outline-none bg-white" id="setting_foam_zwaya_ardiya" type="number">
+</div>
+<div>
+<label class="block text-xs text-slate-500 mb-1">زاوية ضهرية</label>
+<input class="w-full border rounded p-2 focus:border-blue-500 outline-none bg-white" id="setting_foam_zwaya_dahriya" type="number">
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Consumption Settings -->
+<div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+<h4 class="font-bold text-sm text-slate-700 mb-3 flex items-center gap-1"><span class="material-symbols-outlined text-xs">straighten</span> استهلاك القماش (للقطعة العادية)</h4>
+<div class="grid grid-cols-2 gap-3 text-sm">
+<div><label class="block text-xs text-slate-500 mb-1">الدشك</label><input class="w-full border rounded p-2 focus:border-slate-500 outline-none" id="setting_con_dashk" step="0.1" type="number"></div>
+<div><label class="block text-xs text-slate-500 mb-1">المسند (عادي)</label><input class="w-full border rounded p-2 focus:border-slate-500 outline-none" id="setting_con_masnad" step="0.1" type="number"></div>
+<div><label class="block text-xs text-slate-500 mb-1">المسند (خليجي)</label><input class="w-full border rounded p-2 focus:border-slate-500 outline-none" id="setting_con_masnad_k" step="0.1" type="number"></div>
+<div><label class="block text-xs text-slate-500 mb-1">الركاي</label><input class="w-full border rounded p-2 focus:border-slate-500 outline-none" id="setting_con_rakkai" step="0.1" type="number"></div>
+<div><label class="block text-xs text-slate-500 mb-1">الأرني</label><input class="w-full border rounded p-2 focus:border-slate-500 outline-none" id="setting_con_arni" step="0.1" type="number"></div>
+</div>
+</div>
+</div>
+<div class="mt-6 flex gap-3 pt-4 border-t">
+<button class="flex-1 bg-amber-600 text-white py-2.5 rounded-lg hover:bg-amber-700 transition shadow" onclick="saveSettings()">حفظ وتطبيق</button>
+<button class="flex-1 bg-gray-100 text-gray-700 py-2.5 rounded-lg hover:bg-gray-200 transition" onclick="restoreDefaults()">استعادة الافتراضي</button>
+</div>
+</div>
+</div>
+<script>
+    // --- Data & State ---
+    const defaultSettings = {
+        labor: { dashk: 3, masnad: 3, arni: 1.5, rakkai: 1.5, zwaya: 5 },
+        consumption: { dashk: 3, masnad: 2, masnad_khaliji: 2.75, arni: 0.5, rakkai: 0.6, zwaya_fabric: 2.5 },
+        foamPrices: {
+            dashk_70: 14,
+            dashk_80: 17,
+            masnad_normal: 8,
+            masnad_12: 12,
+            masnad_14: 14,
+            rakkai_car: 5,
+            rakkai_circle: 6,
+            zwaya_ardiya: 12,
+            zwaya_dahriya: 15
+        }
+    };
+
+    let settings = JSON.parse(localStorage.getItem('halloum_settings')) || JSON.parse(JSON.stringify(defaultSettings));
+    
+    // Migration check for old data
+    if(!settings.foamPrices) settings.foamPrices = JSON.parse(JSON.stringify(defaultSettings.foamPrices));
+    if(!settings.consumption.zwaya_fabric) settings.consumption.zwaya_fabric = 2.5;
+    if(!settings.foamPrices.zwaya_ardiya) settings.foamPrices.zwaya_ardiya = 12;
+    if(!settings.foamPrices.zwaya_dahriya) settings.foamPrices.zwaya_dahriya = 15;
+
+    let extraFoamItems = [];
+
+    // --- Initialization ---
+    document.addEventListener('DOMContentLoaded', () => {
+        document.getElementById('orderDate').valueAsDate = new Date();
+        populateSettingsInputs();
+        updateOptionLabels();
+        handleMadTypeChange(); // Set initial view
+        calculateAll();
+    });
+
+    // --- Tabs Logic ---
+    function switchTab(tabId) {
+        document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+        document.getElementById(tabId).classList.remove('hidden');
+        
+        ['tab1', 'tab2', 'tab3'].forEach(id => {
+            const btn = document.getElementById('btn-' + id);
+            if (id === tabId) {
+                btn.classList.remove('tab-inactive');
+                btn.classList.add('tab-active');
+            } else {
+                btn.classList.add('tab-inactive');
+                btn.classList.remove('tab-active');
+            }
+        });
+    }
+
+    // --- Mode Change Logic ---
+    function handleMadTypeChange() {
+        const type = document.getElementById('madType').value;
+        const standardInputs = document.getElementById('standardInputs');
+        const cornerInputs = document.getElementById('cornerInputs');
+        
+        if (type === 'corner') {
+            standardInputs.classList.add('hidden');
+            cornerInputs.classList.remove('hidden');
+        } else {
+            standardInputs.classList.remove('hidden');
+            cornerInputs.classList.add('hidden');
+        }
+        calculateAll();
+    }
+
+    // --- Calculation Logic ---
+    function calculateAll() {
+        const madType = document.getElementById('madType').value;
+        const extraLaborCost = parseFloat(document.getElementById('extraLaborCost').value) || 0;
+        
+        let meters = 0;
+        let laborTotal = 0;
+        let breakdownText = [];
+
+        if (madType === 'corner') {
+            // Corner Mode Calculation
+            const cornerMeters = parseFloat(document.getElementById('cornerLength').value) || 0;
+            const fabricFactor = settings.consumption.zwaya_fabric;
+            const laborFactor = settings.labor.zwaya;
+
+            // Fabric = Length * Factor
+            const requiredFabric = cornerMeters * fabricFactor;
+            
+            // Labor = Length * Factor
+            const requiredLabor = cornerMeters * laborFactor;
+
+            // Set Totals for Global use
+            meters = requiredFabric; 
+            laborTotal = requiredLabor;
+
+            // Update specific Corner UI
+            document.getElementById('cornerFabricResult').innerText = requiredFabric.toFixed(2);
+            document.getElementById('cornerLaborResult').innerText = requiredLabor.toFixed(2);
+            
+            if(cornerMeters > 0) breakdownText.push(`زاوية ${cornerMeters}م (×${fabricFactor})`);
+
+        } else {
+            // Standard Mode
+            const counts = {
+                dashk: parseFloat(document.getElementById('countDashk').value) || 0,
+                masnad: parseFloat(document.getElementById('countMasnad').value) || 0,
+                arni: parseFloat(document.getElementById('countArni').value) || 0,
+                rakkai: parseFloat(document.getElementById('countRakkai').value) || 0
+            };
+
+            // Calculate Meters
+            let dM = counts.dashk * settings.consumption.dashk;
+            if(dM > 0) { meters += dM; breakdownText.push(`دشك: ${dM.toFixed(1)}`); }
+
+            let masnadRate = (madType === 'khaliji') ? settings.consumption.masnad_khaliji : settings.consumption.masnad;
+            let mM = counts.masnad * masnadRate;
+            if(mM > 0) { meters += mM; breakdownText.push(`مسند: ${mM.toFixed(1)}`); }
+
+            let aM = counts.arni * settings.consumption.arni;
+            if(aM > 0) { meters += aM; breakdownText.push(`أرني: ${aM.toFixed(1)}`); }
+
+            let rM = counts.rakkai * settings.consumption.rakkai;
+            if(rM > 0) { meters += rM; breakdownText.push(`ركاي: ${rM.toFixed(1)}`); }
+
+            // Calculate Labor
+            laborTotal += counts.dashk * settings.labor.dashk;
+            laborTotal += counts.masnad * settings.labor.masnad;
+            laborTotal += counts.arni * settings.labor.arni;
+            laborTotal += counts.rakkai * settings.labor.rakkai;
+        }
+
+        // Apply Extra Labor
+        laborTotal += extraLaborCost;
+
+        // Update Global Displays for Tab 1
+        document.getElementById('totalMetersDisplay').innerText = meters.toFixed(2);
+        document.getElementById('finalTotalMetersText').innerText = meters.toFixed(2);
+        document.getElementById('metersBreakdown').innerText = breakdownText.length > 0 ? breakdownText.join(' + ') + ' (متر)' : "لا يوجد قياسات مدخلة";
+        document.getElementById('totalLaborDisplay').innerText = laborTotal.toFixed(2);
+        document.getElementById('summaryLabor').innerText = laborTotal.toFixed(2);
+
+
+        // --- Foam (Section 2) ---
+        let foamTotal = 0;
+        
+        const getFoamCost = (id) => {
+            const val = document.getElementById(id).value;
+            return (settings.foamPrices[val] || 0);
+        };
+
+        foamTotal += getFoamCost('foamDashkType') * (parseFloat(document.getElementById('foamDashkCount').value) || 0);
+        document.getElementById('foamDashkTotal').innerText = (getFoamCost('foamDashkType') * (parseFloat(document.getElementById('foamDashkCount').value) || 0)).toFixed(0);
+
+        foamTotal += getFoamCost('foamMasnadType') * (parseFloat(document.getElementById('foamMasnadCount').value) || 0);
+        document.getElementById('foamMasnadTotal').innerText = (getFoamCost('foamMasnadType') * (parseFloat(document.getElementById('foamMasnadCount').value) || 0)).toFixed(0);
+
+        foamTotal += getFoamCost('foamRakkaiType') * (parseFloat(document.getElementById('foamRakkaiCount').value) || 0);
+        document.getElementById('foamRakkaiTotal').innerText = (getFoamCost('foamRakkaiType') * (parseFloat(document.getElementById('foamRakkaiCount').value) || 0)).toFixed(0);
+
+        // New Corner Foam Calculations
+        const zwayaArdiyaCount = parseFloat(document.getElementById('foamZwayaArdiyaCount').value) || 0;
+        const zwayaArdiyaPrice = settings.foamPrices.zwaya_ardiya;
+        const zwayaArdiyaTotal = zwayaArdiyaCount * zwayaArdiyaPrice;
+        document.getElementById('foamZwayaArdiyaTotal').innerText = zwayaArdiyaTotal;
+        foamTotal += zwayaArdiyaTotal;
+
+        const zwayaDahriyaCount = parseFloat(document.getElementById('foamZwayaDahriyaCount').value) || 0;
+        const zwayaDahriyaPrice = settings.foamPrices.zwaya_dahriya;
+        const zwayaDahriyaTotal = zwayaDahriyaCount * zwayaDahriyaPrice;
+        document.getElementById('foamZwayaDahriyaTotal').innerText = zwayaDahriyaTotal;
+        foamTotal += zwayaDahriyaTotal;
+
+        extraFoamItems.forEach(item => {
+            foamTotal += (parseFloat(item.price) || 0) * (parseFloat(item.qty) || 0);
+        });
+
+        document.getElementById('totalFoamDisplay').innerText = foamTotal.toFixed(2);
+        document.getElementById('summaryFoam').innerText = foamTotal.toFixed(2);
+
+        // --- Grand Total ---
+        const fabricPrice = parseFloat(document.getElementById('fabricPricePerMeter').value) || 0;
+        const totalFabricCost = meters * fabricPrice;
+        document.getElementById('totalFabricCostDisplay').innerText = totalFabricCost.toFixed(2);
+        document.getElementById('summaryFabric').innerText = totalFabricCost.toFixed(2);
+
+        const grandTotal = laborTotal + foamTotal + totalFabricCost;
+        document.getElementById('grandTotalUSD').innerText = grandTotal.toFixed(2);
+
+        const rate = parseFloat(document.getElementById('exchangeRate').value) || 1;
+        document.getElementById('rateDisplay').innerText = rate;
+        document.getElementById('grandTotalLocal').innerText = (grandTotal * rate).toLocaleString(undefined, {maximumFractionDigits: 0});
+
+        const deposit = parseFloat(document.getElementById('depositAmount').value) || 0;
+        document.getElementById('remainingBalance').innerText = (grandTotal - deposit).toFixed(2);
+    }
+
+    // --- Helpers ---
+    function addExtraItem() {
+        const id = Date.now();
+        extraFoamItems.push({ id, name: '', qty: 1, price: 0 });
+        renderExtraItems();
+    }
+    function removeExtraItem(id) {
+        extraFoamItems = extraFoamItems.filter(item => item.id !== id);
+        renderExtraItems();
+        calculateAll();
+    }
+    function updateExtraItem(id, field, value) {
+        const item = extraFoamItems.find(i => i.id === id);
+        if(item) { item[field] = value; calculateAll(); }
+    }
+    function renderExtraItems() {
+        const container = document.getElementById('extraItemsContainer');
+        container.innerHTML = '';
+        extraFoamItems.forEach(item => {
+            const div = document.createElement('div');
+            div.className = "flex gap-2 items-center mb-2 animate-fade-in bg-slate-50 p-2 rounded-lg border";
+            div.innerHTML = `
+                <div class="flex-[3]"><input type="text" placeholder="اسم الصنف" oninput="updateExtraItem(${item.id}, 'name', this.value)" value="${item.name}" class="w-full p-2 border rounded-lg text-sm bg-white"></div>
+                <div class="flex-1"><input type="number" placeholder="عدد" oninput="updateExtraItem(${item.id}, 'qty', this.value)" value="${item.qty}" class="w-full p-2 border rounded-lg text-sm text-center bg-white"></div>
+                <div class="flex-1"><input type="number" placeholder="سعر" oninput="updateExtraItem(${item.id}, 'price', this.value)" value="${item.price}" class="w-full p-2 border rounded-lg text-sm text-center bg-white"></div>
+                <button onclick="removeExtraItem(${item.id})" class="text-red-500 hover:text-red-700 p-1"><span class="material-symbols-outlined">delete</span></button>
+            `;
+            container.appendChild(div);
+        });
+    }
+
+    function toggleSettings() {
+        document.getElementById('settingsModal').classList.toggle('hidden');
+    }
+
+    function populateSettingsInputs() {
+        // Labor
+        const keys = ['dashk', 'masnad', 'arni', 'rakkai', 'zwaya'];
+        keys.forEach(k => document.getElementById(`setting_labor_${k}`).value = settings.labor[k]);
+
+        // Corner Fabric Factor
+        document.getElementById('setting_con_zwaya_fabric').value = settings.consumption.zwaya_fabric;
+
+        // Foam
+        Object.keys(settings.foamPrices).forEach(k => {
+            const el = document.getElementById(`setting_foam_${k}`);
+            if(el) el.value = settings.foamPrices[k];
+        });
+
+        // Consumption
+        const conKeys = ['dashk', 'masnad', 'masnad_k', 'arni', 'rakkai'];
+        conKeys.forEach(k => {
+             const key = k === 'masnad_k' ? 'masnad_khaliji' : k;
+             document.getElementById(`setting_con_${k}`).value = settings.consumption[key];
+        });
+    }
+
+    function updateOptionLabels() {
+        const setOptionText = (selectId, value, baseText) => {
+            const select = document.getElementById(selectId);
+            const option = select.querySelector(`option[value="${value}"]`);
+            if(option) option.textContent = `${baseText} ($${settings.foamPrices[value]})`;
+        };
+        setOptionText('foamDashkType', 'dashk_70', 'عرض 70 سم');
+        setOptionText('foamDashkType', 'dashk_80', 'عرض 80 سم');
+        setOptionText('foamMasnadType', 'masnad_normal', 'عادي قناطر');
+        setOptionText('foamMasnadType', 'masnad_12', 'كسحة سماكة 12سم');
+        setOptionText('foamMasnadType', 'masnad_14', 'كسحة سماكة 14سم');
+        setOptionText('foamRakkaiType', 'rakkai_car', 'موديل سيارة');
+        setOptionText('foamRakkaiType', 'rakkai_circle', 'موديل دائرة حديثة');
+
+        document.getElementById('label_zwaya_ardiya').innerText = `زاوية أرضية ($${settings.foamPrices.zwaya_ardiya})`;
+        document.getElementById('label_zwaya_dahriya').innerText = `زاوية ضهرية ($${settings.foamPrices.zwaya_dahriya})`;
+    }
+
+    function saveSettings() {
+        ['dashk', 'masnad', 'arni', 'rakkai', 'zwaya'].forEach(k => 
+            settings.labor[k] = parseFloat(document.getElementById(`setting_labor_${k}`).value)
+        );
+        settings.consumption.zwaya_fabric = parseFloat(document.getElementById('setting_con_zwaya_fabric').value);
+        Object.keys(settings.foamPrices).forEach(k => {
+            const el = document.getElementById(`setting_foam_${k}`);
+            if(el) settings.foamPrices[k] = parseFloat(el.value);
+        });
+        ['dashk', 'masnad', 'masnad_k', 'arni', 'rakkai'].forEach(k => {
+             const key = k === 'masnad_k' ? 'masnad_khaliji' : k;
+             settings.consumption[key] = parseFloat(document.getElementById(`setting_con_${k}`).value);
+        });
+
+        localStorage.setItem('halloum_settings', JSON.stringify(settings));
+        updateOptionLabels();
+        calculateAll();
+        toggleSettings();
+        alert('تم حفظ الإعدادات بنجاح');
+    }
+
+    function restoreDefaults() {
+        if(confirm('استعادة الإعدادات الافتراضية؟')) {
+            settings = JSON.parse(JSON.stringify(defaultSettings));
+            localStorage.removeItem('halloum_settings');
+            populateSettingsInputs();
+            updateOptionLabels();
+            calculateAll();
+            alert('تمت الاستعادة');
+        }
+    }
+
+    // Media/File handlers
+    function handleImageUpload(e) {
+        const file = e.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (ev) => {
+                document.getElementById('imagePreview').src = ev.target.result;
+                document.getElementById('imagePreviewContainer').classList.remove('hidden');
+            };
+            reader.readAsDataURL(file);
+        }
+    }
+    function clearImage() {
+        document.getElementById('imageUpload').value = '';
+        document.getElementById('imagePreviewContainer').classList.add('hidden');
+    }
+    function resetApp() {
+        if(confirm('مسح جميع البيانات؟')) {
+            document.querySelectorAll('input').forEach(i => {
+                if(!i.id.includes('setting') && i.id !== 'exchangeRate') i.value = '';
+            });
+            document.querySelectorAll('input[type="number"]').forEach(i => {
+                if(!i.id.includes('setting') && i.id !== 'exchangeRate') i.value = '';
+            });
+            document.getElementById('madType').value = 'normal';
+            handleMadTypeChange();
+            extraFoamItems = [];
+            renderExtraItems();
+            clearImage();
+            calculateAll();
+            switchTab('tab1');
+        }
+    }
+    function downloadApp() {
+        const blob = new Blob([document.documentElement.outerHTML], { type: 'text/html' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'Halloum_App.html';
+        a.click();
+    }
+    function takeSnapshot() {
+        document.body.classList.add('screenshot-mode');
+        const overlay = document.createElement('div');
+        overlay.className = "fixed inset-0 bg-black z-[100] flex items-center justify-center text-white";
+        overlay.innerText = "جاري الحفظ...";
+        document.body.appendChild(overlay);
+        setTimeout(() => {
+            html2canvas(document.getElementById('app-container'), { scale: 2, useCORS: true }).then(canvas => {
+                const a = document.createElement('a');
+                a.download = `فاتورة_${document.getElementById('customerName').value}.png`;
+                a.href = canvas.toDataURL();
+                a.click();
+                document.body.removeChild(overlay);
+                document.body.classList.remove('screenshot-mode');
+            });
+        }, 500);
+    }
+    
+    // Detailed WhatsApp Share
+    function shareFullDetails() {
+        const name = document.getElementById('customerName').value || 'زبون';
+        const date = document.getElementById('orderDate').value;
+        const madType = document.getElementById('madType').options[document.getElementById('madType').selectedIndex].text;
+        
+        // Build Section 1 Text
+        let section1Text = "";
+        const typeVal = document.getElementById('madType').value;
+        if(typeVal === 'corner') {
+            const len = document.getElementById('cornerLength').value || 0;
+            if(len > 0) section1Text += `- طول الزاوية: ${len} متر\n`;
+        } else {
+            const d = document.getElementById('countDashk').value;
+            const m = document.getElementById('countMasnad').value;
+            const a = document.getElementById('countArni').value;
+            const r = document.getElementById('countRakkai').value;
+            if(d > 0) section1Text += `- عدد الدشكات: ${d}\n`;
+            if(m > 0) section1Text += `- عدد المساند: ${m}\n`;
+            if(a > 0) section1Text += `- عدد الأرني: ${a}\n`;
+            if(r > 0) section1Text += `- عدد الركايات: ${r}\n`;
+        }
+        const laborTotal = document.getElementById('totalLaborDisplay').innerText;
+        const totalMeters = document.getElementById('totalMetersDisplay').innerText;
+
+        // Build Section 2 Text
+        let section2Text = "";
+        // Helper to check and add line
+        const addFoamLine = (idType, idCount, label) => {
+            const count = document.getElementById(idCount).value;
+            if(count > 0) {
+                const select = document.getElementById(idType);
+                const typeText = select ? select.options[select.selectedIndex].text : label;
+                section2Text += `- ${typeText} (عدد ${count})\n`;
+            }
+        };
+        addFoamLine('foamDashkType', 'foamDashkCount');
+        addFoamLine('foamMasnadType', 'foamMasnadCount');
+        addFoamLine('foamRakkaiType', 'foamRakkaiCount');
+        
+        const zA = document.getElementById('foamZwayaArdiyaCount').value;
+        if(zA > 0) section2Text += `- زاوية أرضية (عدد ${zA})\n`;
+        const zD = document.getElementById('foamZwayaDahriyaCount').value;
+        if(zD > 0) section2Text += `- زاوية ضهرية (عدد ${zD})\n`;
+
+        extraFoamItems.forEach(item => {
+            section2Text += `- ${item.name} (عدد ${item.qty}): $${item.price * item.qty}\n`;
+        });
+        const foamTotal = document.getElementById('totalFoamDisplay').innerText;
+
+        // Build Final Text
+        const fabricCost = document.getElementById('totalFabricCostDisplay').innerText;
+        const grandTotal = document.getElementById('grandTotalUSD').innerText;
+        const rate = document.getElementById('exchangeRate').value;
+        const localTotal = document.getElementById('grandTotalLocal').innerText;
+        const deposit = document.getElementById('depositAmount').value || 0;
+        const remaining = document.getElementById('remainingBalance').innerText;
+
+        const message = `
+*فاتورة: حلوم للمفروشات* 🛋️
+------------------------
+👤 *الزبون:* ${name}
+📅 *التاريخ:* ${date}
+------------------------
+*1️⃣ القسم الأول: الأمتار والأجرة*
+🔹 *النوع:* ${madType}
+${section1Text}
+📏 *إجمالي الأمتار:* ${totalMeters} متر
+💵 *أجرة الخياطة:* $${laborTotal}
+------------------------
+*2️⃣ القسم الثاني: الإسفنج*
+${section2Text}
+🛒 *مجموع الإسفنج:* $${foamTotal}
+------------------------
+*3️⃣ الملخص المالي*
+🧵 *كلفة القماش:* $${fabricCost}
+💰 *الإجمالي الكلي:* $${grandTotal}
+💱 *سعر الصرف:* ${rate}
+💵 *المطلوب (محلي):* ${localTotal}
+💳 *المدفوع:* $${deposit}
+📉 *الباقي:* $${remaining}
+------------------------
+شكراً لثقتكم بنا!
+        `.trim();
+
+        if (navigator.share) {
+            navigator.share({
+                title: 'فاتورة حلوم للمفروشات',
+                text: message
+            }).catch(console.error);
+        } else {
+            // WhatsApp Web Fallback
+            const url = `https://wa.me/?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+        }
+    }
+</script>
+
+</body></html>
